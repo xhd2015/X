@@ -7,9 +7,6 @@
 //
 
 import Foundation
-
-
-import Foundation
 import SQLite
 
 
@@ -20,26 +17,19 @@ class WritingManager {
         print("Error happened while operating database" + e.localizedDescription)
     }
     
-    lazy var db:SQLite.Connection = {
-        do{
-            let db =  try SQLite.Connection(self.dbPath)
-            try ensureTableExists(db: db)
-            return db
-        }catch{
-            fatalError("Cannot open database:\(dbPath)")
-        }
-    }()
     //let userTable:SQLite.Table = Table("users")
     let id = Expression<Int64>("id")
     let content = Expression<String>("content")
     let date = Expression<Date>("date")
     
-    var dbPath:String
+    var db:SQLite.Connection
     var errorHandler:ErrorHandler
     
-    init(dbPath:String, errorHandler:@escaping ErrorHandler = SqliteModelManager.defaultHandler) {
-        self.dbPath = dbPath
+    
+    init(db:SQLite.Connection, errorHandler:@escaping ErrorHandler = SqliteModelManager.defaultHandler) throws {
+        self.db = db
         self.errorHandler = errorHandler
+        try ensureTableExists(db: db)
     }
     
     func ensureTableExists(db:SQLite.Connection) throws {
@@ -94,12 +84,18 @@ class WritingManager {
         return writing
     }
     
-    func querySince(since:Date? = nil) -> [Writing] {
+    /*
+     * query from since to until, until is not included
+     */
+    func query(since:Date? = nil,until:Date? = nil) -> [Writing] {
         var arr = [Writing]()
         _ = runNoError {
             let userTable = getTable()
             if since != nil {
                _ = userTable.filter(self.date >= since!)
+            }
+            if until != nil {
+                _ = userTable.filter(self.date < until!)
             }
             for row in try self.db.prepare(userTable){
                 arr.append(Writing(

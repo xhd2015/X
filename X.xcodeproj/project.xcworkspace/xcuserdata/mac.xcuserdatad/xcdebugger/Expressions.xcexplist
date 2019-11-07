@@ -3,10 +3,49 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "SqliteTestView.query():SqliteTestView.swift">
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in SqliteManager.db.getter:SqliteManager.swift">
       </ContextState>
       <ContextState
-         contextName = "SqliteTestView.query():SqliteTestView.swift">
+         contextName = "closure #1 in SqliteModelManager.db.getter:SqliteModelManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "WritingList.groupedData.getter:WritingList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "grp[0].list">
+            </PersistentString>
+            <PersistentString
+               value = "GroupedItem(weekStart: DateUtils.toWeekMondayBegin(date),list:[Writing]())">
+            </PersistentString>
+            <PersistentString
+               value = "item!.list">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "WritingList.init(since:until:data:):WritingList.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #2 in closure #1 in WritingList.body.getter:WritingList.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #1 in WritingList.body.getter:WritingList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "groupItem.list[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "WritingList.queryData():WritingList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "DateUtils.toDateTimeString(self.since!)">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "SqliteManager.queryMany(_:errorHandler:):SqliteManager.swift">
@@ -17,29 +56,7 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "closure #1 in SqliteModelManager.db.getter:SqliteModelManager.swift">
-      </ContextState>
-      <ContextState
-         contextName = "WritingList.groupedData.getter:WritingList.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "item!.list">
-            </PersistentString>
-            <PersistentString
-               value = "grp[0].list">
-            </PersistentString>
-            <PersistentString
-               value = "GroupedItem(weekStart: DateUtils.toWeekMondayBegin(date),list:[Writing]())">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "closure #1 in closure #1 in WritingList.body.getter:WritingList.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "groupItem.list[0]">
-            </PersistentString>
-         </PersistentStrings>
+         contextName = "WritingList.viewData.getter:WritingList.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

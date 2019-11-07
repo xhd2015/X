@@ -12,14 +12,25 @@ import Foundation
 struct WritingList: View {
     
     static let YYYY_MM_DD = DateUtils.getFormatter("yyyy年MM月dd日")
+    static let HH_MM_SS = DateUtils.getFormatter("HH:mm:ss")
+    static let WEEK_NAMES = ["周一","周二","周三","周四","周五","周六","周日"]
     
-    class WeekstartAndItem : Identifiable{
+    enum NoteContextualType {
+        case WEEK_BEGINNING,DAY_BEGINNING,ORDINARY;
+    }
+    
+    /**
+     * a single note providing more contextual information
+     * i.e.  if it is beginning of a week,
+     *       if it starts a new day
+     */
+    struct WeekstartAndItem : Identifiable{
         var year:Int = 0
         var week:Int = 0
+        var dayOfWeek:Int = 0
+        var  contextualType:NoteContextualType = .ORDINARY
+        
         var writing:Writing
-        init( writing:Writing){
-            self.writing = writing
-        }
         
         var id:Date {
             return writing.date
@@ -42,6 +53,7 @@ struct WritingList: View {
         var data:[Writing]
         var lastYear = -1
         var lastWeekOfYear = -1
+        var lastDayOfWeek = -1
         var idx = 0
         
         init(data:[Writing]){
@@ -57,17 +69,29 @@ struct WritingList: View {
             idx = idx + 1
             let thisYear = DateUtils.getYear(item.date)
             let thisWeekOfYear = DateUtils.getWeekOfYear(item.date)
+            let thisDayOfWeek = DateUtils.getWeekdaySinceMonday(item.date)
             
-            let result = WeekstartAndItem(writing: item)
-            // a older one
+            var result = WeekstartAndItem(writing: item)
+            // same week
             if lastYear != -1 && lastWeekOfYear != -1 && lastYear == thisYear && lastWeekOfYear == thisWeekOfYear {
+                // same day
+                if lastDayOfWeek != -1 && lastDayOfWeek == thisDayOfWeek {
+                    // remain default
+                    return result
+                }
+                result.contextualType = .DAY_BEGINNING
+                result.dayOfWeek = thisDayOfWeek
+                lastDayOfWeek = thisDayOfWeek
                 return  result
             }
             
+            result.contextualType = .WEEK_BEGINNING
             lastYear = thisYear
             lastWeekOfYear = thisWeekOfYear
+            lastDayOfWeek = thisDayOfWeek
             result.year = thisYear
             result.week = thisWeekOfYear
+            result.dayOfWeek = thisDayOfWeek
             return result
         }
     }
@@ -87,11 +111,36 @@ struct WritingList: View {
      */
     //    typealias GroupedItem = (weekStart:Date,list:[Writing])
     //    typealias GroupedData = [GroupedItem]
+    
+    @State var since:Date? = nil
+    @State var until:Date? = nil
     /*
      * assert the data are sorted by date already
      */
-    @State var data:[Writing]
+    //    @State
+    @State var data:[Writing]? = nil
     
+    var viewData:[Writing] {
+        //        print("reprinting")
+        //        return [Writing]()
+        if data == nil {
+            return self.queryData()
+        }
+        return data!
+    }
+    
+    
+    // TODO buggy: with init, self.data cannot be assigned correctly,the underlying problem is not determined
+    // we fix the lazy initiating problem by settting computed property
+    //    init(since:Date? = nil, until:Date? = nil, data:[Writing]?){
+    //        self.data = data!
+    //        self.since = since
+    //        self.until = until
+    //        self.data = data
+    //        if self.data == nil {
+    //            self.refreshData()
+    //        }
+    //    }
     
     /*
      * linked hash map,
@@ -117,48 +166,115 @@ struct WritingList: View {
     //        return grp
     //    }
     
+    
+    
     var body: some View {
-        List{
-            ForEach( Array(WeekedSequence(data))){ groupItem in
+        VStack {
+            HStack {
+                Spacer()
                 
-                VStack {
-                    if groupItem.week != 0 {
-                        Text("\(DateUtils.format(groupItem.writing.date, format: WritingList.YYYY_MM_DD)) 第\(groupItem.week+1)周 第\(DateUtils.getDayOfYear(groupItem.writing.date)+1)天")
-                            .background(Color.blue)
-                    }else{
-                        Text("\(DateUtils.format(groupItem.writing.date, format: WritingList.YYYY_MM_DD))")
-                    }
-                    Text(groupItem.writing.content)
-                }.frame( alignment: Alignment.leading)
-                //
-                //                VStack{ Text("\(DateUtils.format(groupItem.weekStart, format: WritingList.YYYY_MM_DD)), size = \(groupItem.list.count)")
-                //                    .background(Color.blue)
-                //
-                //                    List{
-                //                        Text("hah")
-                //                        Text("haha2")
-                ////                        ForEach(groupItem.list){ _ in
-                ////                            Text("haha")
-                ////                        }
-                //                    }
-                //                }
-                //                Text(DateUtils.toDateTimeString(groupItem.weekStart))
-                //                ForEach(groupItem.list, id: \.date){_ in
-                //                    Text("OK")
-                //                }
+                Button(action:{
+                    self.refreshData()
+                }){
+                    Text("Refresh")
+                }
+                NavigationLink(destination: WriterView()){
+                    Text("Write")
+                }
                 
+                
+                NavigationLink(destination: MiscListView()){
+                    Text("More")
+                }
+                
+            }.padding(Edge.Set.trailing, 20.0)
+            List{
+                ForEach(Array(WeekedSequence(viewData))){ groupItem in
+                    // show title, content, and time
+                    VStack(alignment:.leading) {
+                        HStack{
+                            if groupItem.contextualType == WritingList.NoteContextualType.WEEK_BEGINNING  {
+                                Text(WritingList.formatLeadingDate(groupItem.writing.date,week: groupItem.week))
+                                    .background(Color.blue)
+                            }else if groupItem.contextualType == WritingList.NoteContextualType.DAY_BEGINNING {
+                                Text(WritingList.formatOrdinaryDate(groupItem.writing.date,week:groupItem.week))
+                                //                                    .background(Color(white: 100))
+                            }
+                            //                            }
+                            //else{
+                            //                                Text("OJBK")
+                            //                            }
+                            Spacer()
+                        }
+                        
+                        NavigationLink(destination: WritingDetailView(writing:groupItem.writing)){
+                            Text(groupItem.writing.content)
+                                .fontWeight(.semibold)
+                        }
+                        
+                        Text(WritingList.formatTime(groupItem.writing.date))
+                            .font(.system(size: 15))
+                            .italic()
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(.gray)
+                        
+                        
+                        
+                    }.frame( alignment: Alignment.leading)
+                    
+                }
+                .padding(.trailing,1)
             }
+            //            .padding(.trailing,1)
         }
-        
     }
+    
+    // this get called
+    //    func onAppear(perform action: (() -> Void)? = nil) -> some View
+    //    {
+    //        print("sub appeared")
+    //        action?()
+    //        return self
+    //    }
+    
+    func refreshData(){
+        self.data = self.queryData()
+    }
+    /*
+     * to avoid modifying data refreshing views
+     */
+    func queryData() -> [Writing]{
+        return DataManager.writingManager.query(since: self.since, until: self.until)
+    }
+    
+    static func formatLeadingDate(_ date:Date,week:Int) -> String {
+        return "\(DateUtils.format(date, format: WritingList.YYYY_MM_DD))·\(WritingList.WEEK_NAMES[DateUtils.getWeekdaySinceMonday(date)]) 第\(week+1)/\(DateUtils.getWeekCountOfYear(date))周 第\(DateUtils.getDayOfYear(date)+1)天"
+    }
+    static func formatOrdinaryDate(_ date:Date,week:Int) -> String {
+        return "\(DateUtils.format(date, format: WritingList.YYYY_MM_DD))·\(WritingList.WEEK_NAMES[DateUtils.getWeekdaySinceMonday(date)])"
+    }
+    static func formatTime(_ date:Date) -> String {
+        return DateUtils.format(date, format: DateUtils.HH_MM_SS)
+    }
+    
+    // this will not be called
+    //    func onAppear(perform: (()->Void)? = nil ) {
+    //        //        super.onAppear(perform:perform)
+    //        print("sub appeared")
+    //        perform?()
+    //    }
+    
 }
 
 struct WritingList_Previews: PreviewProvider {
     static var previews: some View {
         WritingList(data:[
-            Writing(id:1, content:"I craeted a new content",date:DateUtils.parseDatetime("2019-10-01 09:10:00")!),
+            Writing(id:1, content:"I created a new content",date:DateUtils.parseDatetime("2019-10-01 09:10:00")!),
             
-            Writing(id:2, content:"I Updated some content",date:DateUtils.parseDatetime("2019-10-02 09:13:00")!)
+            Writing(id:2, content:"I Updated some content",date:DateUtils.parseDatetime("2019-10-02 09:13:00")!),
+            Writing(id:3, content:"I Updated some content also",date:DateUtils.parseDatetime("2019-10-02 09:15:00")!),
+            
+            Writing(id:4, content:"I Updated some content also Loooooooooooooooooooooooooooooooooooooong Cooooooooooooooooooooontent",date:DateUtils.parseDatetime("2019-10-02 09:15:00")!)
         ])
     }
 }

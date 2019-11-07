@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SQLite
 
 class DataManager {
     private init(){}
@@ -20,12 +21,41 @@ class DataManager {
         ).first!
     }
     
+    static var db:SQLite.Connection {
+        do{
+            let db =  try SQLite.Connection("\(path)/data.sqlite3.db")
+            return db
+        }catch{
+            fatalError("Cannot open database:\(path)/data.sqlite3.db")
+        }
+    }
+    
     /*
      the writing manager
      */
     static var writingManager : WritingManager {
-        return WritingManager(dbPath: "\(self.path)/data.sqlite3.db")
+        do{
+            return try WritingManager(db: db)
+        }catch{
+            fatalError("Cannot create writing manager")
+        }
     }
+    static var remarkManager : RemarkManager {
+        do{
+            return try RemarkManager(db: db)
+        }catch{
+            fatalError("Cannot create remark manager")
+        }
+    }
+    
+    static var tagMapManager : TagMapManager {
+        do{
+            return try TagMapManager(db: db)
+        }catch{
+            fatalError("Cannot create tag map manager")
+        }
+    }
+    
     
     
     

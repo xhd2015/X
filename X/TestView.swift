@@ -16,41 +16,47 @@ struct TestView: View {
     //    ]
     
     var body: some View {
-        NavigationView {
-            VStack{
-//                Text("Test")
-                List{
-                    //                ForEach(Array(viewList.values)){ e in
-                    //            NavigationLink(destination:self.viewList[e]){
-                    //                        Text(e)
-                    //                    }
-                    //
-                    //                }
-                    NavigationLink(destination: CoreDataTestView()){
-                        Text("CoreData Test")
-                    }
-                    
-                    NavigationLink(destination: SqliteRawTestView()){
-                        Text("Sqlite Raw Test")
-                    }
-                    
-                    
-                    NavigationLink(destination: SqliteTestView()){
-                        Text("Sqlite Test")
-                    }
-                    
+        VStack{
+            //                Text("Test")
+            List{
+                //                ForEach(Array(viewList.values)){ e in
+                //            NavigationLink(destination:self.viewList[e]){
+                //                        Text(e)
+                //                    }
+                //
+                //                }
+                NavigationLink(destination: CoreDataTestView()){
+                    Text("CoreData Test")
                 }
-                Spacer()
+                
+                NavigationLink(destination: SqliteRawTestView()){
+                    Text("Sqlite Raw Test")
+                }
+                
+                
+                NavigationLink(destination: SqliteTestView()){
+                    Text("Sqlite Test")
+                }
+                
+                NavigationLink(destination:TestViewListView()){
+                    Text("View Test")
+                }
+                
             }
-                        .navigationBarTitle("Test")
-            
+            Spacer()
         }
-        //        .frame(alignment: Alignment.top)
+        .navigationBarTitle("Test")
+        
     }
+    //        .frame(alignment: Alignment.top)
+    
 }
 
 struct TestView_Previews: PreviewProvider {
     static var previews: some View {
-        TestView()
+        
+        NavigationView {
+            TestView()
+        }
     }
 }

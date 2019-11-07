@@ -57,7 +57,7 @@ struct TextView: UIViewRepresentable {
 struct TextView_Previews: PreviewProvider {
     @State static var text = "hello"
     static var previews: some View {
-        TextView(text: self.$text,editable: false)
+        TextView(text: self.$text,editable: true)
             .frame(height:200)
     }
 }
