@@ -2,25 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c6d87e0-8975-480c-a0d2-7e4323ef6f21" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/X/Model/WeekWriting/WeekedIterable.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/X/Model/WeekWriting/WeekedSequence.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/X/Model/WeekWriting/WeekstartAndItem.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/X/Views/ViewReferences.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/X.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/X.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/X.xcodeproj/project.xcworkspace/xcuserdata/mac.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/X.xcodeproj/project.xcworkspace/xcuserdata/mac.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/X.xcodeproj/project.xcworkspace/xcuserdata/mac.xcuserdatad/xcdebugger/Expressions.xcexplist" beforeDir="false" afterPath="$PROJECT_DIR$/X.xcodeproj/project.xcworkspace/xcuserdata/mac.xcuserdatad/xcdebugger/Expressions.xcexplist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/X.xcodeproj/xcuserdata/mac.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" afterPath="$PROJECT_DIR$/X.xcodeproj/xcuserdata/mac.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/X.xcodeproj/xcuserdata/mac.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/X.xcodeproj/xcuserdata/mac.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/X/Data/DataManager.swift" beforeDir="false" afterPath="$PROJECT_DIR$/X/Data/DataManager.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/X/Data/DateUtils.swift" beforeDir="false" afterPath="$PROJECT_DIR$/X/Data/DateUtils.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/X/Data/TagMapManager.swift" beforeDir="false" afterPath="$PROJECT_DIR$/X/Data/TagMapManager.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/X/Data/WritingManager.swift" beforeDir="false" afterPath="$PROJECT_DIR$/X/Data/WritingManager.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/X/Views/ShortLog.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/X/Views/ShortLogGroup.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/X/Views/ShortLogGroupList.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/X/Views/TextView.swift" beforeDir="false" afterPath="$PROJECT_DIR$/X/Views/General/TextView.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/X/TestViews/ViewTest/TestViewListView.swift" beforeDir="false" afterPath="$PROJECT_DIR$/X/TestViews/ViewTest/TestViewListView.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/X/Views/WritingDetailView.swift" beforeDir="false" afterPath="$PROJECT_DIR$/X/Views/WritingDetailView.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/X/Views/WritingList.swift" beforeDir="false" afterPath="$PROJECT_DIR$/X/Views/WritingList.swift" afterDir="false" />
     </list>
@@ -119,13 +107,14 @@
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="X" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/schema" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/X/TestViews/ViewTest" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/X/TestViews/ViewTest" />
       <recent name="$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/schema" />
       <recent name="$PROJECT_DIR$/X/Data" />
       <recent name="$PROJECT_DIR$/X/Model" />
@@ -163,12 +152,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@622dd94a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@e182995a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@622dd94a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@392b732" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@e182995a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@6914c7e2" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -187,7 +176,7 @@
       <workItem from="1572842498685" duration="1086000" />
       <workItem from="1572877739127" duration="50000" />
       <workItem from="1573303611541" duration="31293000" />
-      <workItem from="1573367346078" duration="429000" />
+      <workItem from="1573367346078" duration="20532000" />
     </task>
     <servers />
   </component>
@@ -211,69 +200,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/X/Views/WritingDetailView.swift</url>
-          <line>313</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/X/Views/WritingDetailView.swift</url>
-          <line>108</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/X/Views/WritingDetailView.swift</url>
-          <line>308</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/X/Views/WritingDetailView.swift</url>
-          <line>317</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/X/Views/WritingDetailView.swift</url>
-          <line>184</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/X/Data/CacheManager.swift</url>
-          <line>45</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/X/Data/WritingManager.swift</url>
-          <line>73</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/X/Data/CacheManager.swift</url>
-          <line>26</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/X/Data/CacheManager.swift</url>
-          <line>35</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/X/Data/CacheManager.swift</url>
-          <line>30</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/X/Model/WeekWriting/WeekedIterable.swift</url>
-          <line>28</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/X/Model/WeekWriting/WeekedIterable.swift</url>
-          <line>33</line>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/X/Data/DataManager.swift</url>
-          <line>44</line>
-          <option name="timeStamp" value="46" />
+          <url>file://$PROJECT_DIR$/X/Views/WritingList.swift</url>
+          <line>306</line>
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

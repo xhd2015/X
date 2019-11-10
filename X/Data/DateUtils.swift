@@ -142,9 +142,6 @@ class  DateUtils{
     static func toStartOfDay(_ date:Date)->Date{
         return GREGORIAN_CALENDAR.startOfDay(for:date)
     }
-    static func toYearBegin(_ date:Date) -> Date {
-        return GREGORIAN_CALENDAR.date(from:DateComponents(calendar: GREGORIAN_CALENDAR, year: getYear(date) ))!
-    }
     
     static func toDateBegin(_ date:Date? = nil) -> Date {
         let requiredData = date ??  Date()
@@ -158,6 +155,48 @@ class  DateUtils{
         let diffDay = getWeekdaySinceMonday(requiredData)
         return toDateBegin(GREGORIAN_CALENDAR.date(byAdding: .day, value: -diffDay, to: requiredData)!)
     }
+    static func toMonthBegin(_ date:Date) -> Date {
+        return GREGORIAN_CALENDAR.date(from: DateComponents(calendar: GREGORIAN_CALENDAR,year: getYear(date), month: getMonth(date) + 1, day: 1))!
+    }
+    // month 1-3 = season 1
+    //  1,4,7,10
+    static func toSeasonBegin(_ date:Date) -> Date {
+        return GREGORIAN_CALENDAR.date(from: DateComponents(calendar: GREGORIAN_CALENDAR,year: getYear(date), month: (getMonth(date)/3)*3 + 1))!
+    }
+    static func toYearBegin(_ date:Date) -> Date {
+        return GREGORIAN_CALENDAR.date(from:DateComponents(calendar: GREGORIAN_CALENDAR, year: getYear(date) ))!
+    }
+
+    static func toWeekSundayEnd(_ date:Date) -> Date {
+        let diffDay = 6 - getWeekdaySinceMonday(date)
+        return toDateBegin(GREGORIAN_CALENDAR.date(byAdding: .day, value: diffDay, to: date)!)
+    }
+    static func toMonthEnd(_ date:Date) -> Date {
+        let year = getYear(date)
+        let month = getMonth(date)
+        return GREGORIAN_CALENDAR.date(from: DateComponents(calendar: GREGORIAN_CALENDAR,year: year, month: month+1, day: getMonthDayCount(month, year: year),hour: 23, minute: 59,second: 59))!
+    }
+    // 3.31 6.30 9.30 12.31
+    // including
+    static func toSeasonEnd(_ date:Date) -> Date {
+        let seasonMonth = (getMonth(date) / 3) * 3 + 3
+        return GREGORIAN_CALENDAR.date(from: DateComponents(calendar: GREGORIAN_CALENDAR,year: getYear(date), month: seasonMonth, day: (seasonMonth==3 || seasonMonth==12) ? 31 : 30,hour: 23, minute: 59,second: 59))!
+    }
+    static func toYearEnd(_ date:Date) -> Date {
+        return GREGORIAN_CALENDAR.date(from: DateComponents(calendar: GREGORIAN_CALENDAR,year: getYear(date), month: 12, day: 31,hour: 23, minute: 59,second: 59))!
+    }
+    static func isLeapYear(_ year:Int) -> Bool {
+        return  (year % 4 == 0 && year % 100 != 0 ) || year % 400 == 0
+    }
+    // month: 0~11
+    // returns 28,29, or 30 31
+    static func getMonthDayCount(_ month:Int,year:Int = 0) -> Int{
+        if month == 1 {
+            return isLeapYear(year) ? 29 : 28
+        }
+        return (month <= 6) ? (30 + (month+1)%2) : (30 + month%2)
+    }
+
     
     static func toDateString(_ date:Date) -> String {
         return YYYY_MM_DD.string(from:date)
@@ -183,6 +222,8 @@ class  DateUtils{
     static  func currentTimeInSeconds() -> Int {
         return Int(Date().timeIntervalSince1970)
     }
+
+    static func pass(){}
     
 }
 

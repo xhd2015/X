@@ -18,6 +18,8 @@ class TagMapManager {
     }
     
     //let userTable:SQLite.Table = Table("users")
+
+    let table = Table("tag_map")
     
     let id = Expression<Int64>("id")
     let name = Expression<String>("name")

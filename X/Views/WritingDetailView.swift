@@ -157,13 +157,14 @@ struct WritingDetailView: View {
                         .underline()
 
                 if !requiredTagMaps.isEmpty {
-                    HStack {
+//                    HStack {
                         ForEach(requiredTagMaps, id: \.id) { model in
-                            // TODO: add remove support
-                            Text(model.tagName)
-                                    .foregroundColor(.orange)
+                            NavigationLink(destination: WritingList(tags:[model.tagName])){
+                                Text(model.tagName)
+                                        .foregroundColor(.orange)
+                            }
                         }
-                    }
+//                    }
                 }
                 //.alert
                 if !showEditor {
@@ -194,7 +195,7 @@ struct WritingDetailView: View {
                                 .underline()
                     }.onDisappear {
                         // the button is disappeared either because clicked or hide in editingMode
-                        print("Disappear,showEditor=\(self.showEditor)")
+//                        print("Disappear,showEditor=\(self.showEditor)")
                         if !self.showEditor {
                             self.enteredLinkSelection = true
                         }
@@ -207,7 +208,7 @@ struct WritingDetailView: View {
 
                             // doing the update
                         }
-                        print("onAppear, linkIds = \(self.linkIds)")
+//                        print("onAppear, linkIds = \(self.linkIds)")
                     }
                 }
 

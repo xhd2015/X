@@ -53,8 +53,11 @@
 		04FF3605236EF67200B36F3D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF3604236EF67200B36F3D /* DataManager.swift */; };
 		04FF3607236EF81800B36F3D /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF3606236EF81800B36F3D /* ErrorHandler.swift */; };
 		04FF3609236EFA1100B36F3D /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF3608236EFA1100B36F3D /* DateUtils.swift */; };
+		1A54F360515D684D5CA5A5B4 /* SheetViewTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F8FE4949269754DC25C7 /* SheetViewTestView.swift */; };
 		1A54F6E7334A06EF77DAE2F8 /* LinkMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FCE10583AAD940640786 /* LinkMap.swift */; };
+		1A54F7E157116FD79236DDB9 /* PopupContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FCA5B47A1092DAB67939 /* PopupContainer.swift */; };
 		1A54F8279734F8D9DF40E39C /* MessageException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FB61D9DC8946875153A6 /* MessageException.swift */; };
+		1A54FBCCE85C37002D9459D4 /* PopoverTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F6494CDBA301B4439031 /* PopoverTestView.swift */; };
 		1A54FBFA0D3EA785BB6652BD /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FDBFDD1956F8EB722F18 /* CacheManager.swift */; };
 		1A54FF15AB24A828C6149813 /* LinkMapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F06CBDAA2663522CEB2C /* LinkMapManager.swift */; };
 /* End PBXBuildFile section */
@@ -133,7 +136,10 @@
 		04FF3606236EF81800B36F3D /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		04FF3608236EFA1100B36F3D /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		1A54F06CBDAA2663522CEB2C /* LinkMapManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkMapManager.swift; sourceTree = "<group>"; };
+		1A54F6494CDBA301B4439031 /* PopoverTestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverTestView.swift; sourceTree = "<group>"; };
+		1A54F8FE4949269754DC25C7 /* SheetViewTestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetViewTestView.swift; sourceTree = "<group>"; };
 		1A54FB61D9DC8946875153A6 /* MessageException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageException.swift; sourceTree = "<group>"; };
+		1A54FCA5B47A1092DAB67939 /* PopupContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupContainer.swift; sourceTree = "<group>"; };
 		1A54FCE10583AAD940640786 /* LinkMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkMap.swift; sourceTree = "<group>"; };
 		1A54FDBFDD1956F8EB722F18 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -314,6 +320,8 @@
 				045E0016237292CB0083E39D /* ScrollViewTestView.swift */,
 				045E0018237293410083E39D /* TestViewListView.swift */,
 				04317DB22374727000B1922B /* TextViewTestView.swift */,
+				1A54F8FE4949269754DC25C7 /* SheetViewTestView.swift */,
+				1A54F6494CDBA301B4439031 /* PopoverTestView.swift */,
 			);
 			path = ViewTest;
 			sourceTree = "<group>";
@@ -322,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				04FF35F3236EC86800B36F3D /* TextView.swift */,
+				1A54FCA5B47A1092DAB67939 /* PopupContainer.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -557,6 +566,9 @@
 				1A54F6E7334A06EF77DAE2F8 /* LinkMap.swift in Sources */,
 				1A54FF15AB24A828C6149813 /* LinkMapManager.swift in Sources */,
 				1A54FBFA0D3EA785BB6652BD /* CacheManager.swift in Sources */,
+				1A54F360515D684D5CA5A5B4 /* SheetViewTestView.swift in Sources */,
+				1A54FBCCE85C37002D9459D4 /* PopoverTestView.swift in Sources */,
+				1A54F7E157116FD79236DDB9 /* PopupContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

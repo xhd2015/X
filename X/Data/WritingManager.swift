@@ -78,21 +78,47 @@ class WritingManager {
     }
     
     /*
-     * query from since to until, until is not included
+     * query from since to until, until is **included**
      */
-    func query(since:Date? = nil,until:Date? = nil) -> [Writing] {
+    func query(since:Date? = nil,until:Date? = nil,tags:[String]? = nil,searchContent:String = "") -> [Writing] {
         var arr = [Writing]()
         _ = runNoError {
+            // searchContent = like
+            // tags  = join and in
             var condition = self.table
-            if since != nil || until != nil {
-                if since != nil && until != nil {
-                     condition = condition.filter(self.date >= since! && self.date < until!)
-                }else if since != nil {
-                    condition = condition.filter(self.date >= since!)
-                }else{
-                    condition = condition.filter(self.date < until!)
+            var filterExpr:Expression<Bool> = Expression<Bool>(literal:"1=1")
+
+            if since != nil {
+                filterExpr = filterExpr && self.table[self.date] >= since!
+            }
+            if until != nil {
+                filterExpr = filterExpr && self.table[self.date] <= until!
+            }
+            if !searchContent.isEmpty {
+                filterExpr = filterExpr && self.table[self.content].like("%\(searchContent)%")
+            }
+            if let ntag = tags {
+                if !ntag.isEmpty {
+                    let tagTable = DataManager.tagMapManager.table
+                    condition = condition.join(tagTable, on: tagTable[DataManager.tagMapManager.targetId] == self.table[self.id])
+                    filterExpr = filterExpr && ntag.contains(tagTable[DataManager.tagMapManager.tagName])
                 }
             }
+            condition =  condition.filter(filterExpr)
+                    .select(self.table[self.id],self.table[self.date],self.table[self.content])
+            .order(self.table[self.date],self.table[self.id])
+
+
+//            if since != nil || until != nil {
+//                if since != nil && until != nil {
+//                     condition = condition.filter(self.date >= since! && self.date <= until!)
+//                }else if since != nil {
+//                    condition = condition.filter(self.date >= since!)
+//                }else{
+//                    condition = condition.filter(self.date <= until!)
+//                }
+//            }
+//            condition = condition.filter()
             // BUGGY! custom operator no short cut
 //            var condition = self.table.filter( (since == nil || self.date >= since! ) && ( until == nil || self.date < until! ) )
             // TODO: confirm if chaining worked
@@ -104,7 +130,7 @@ class WritingManager {
 //            }
             for row in try self.db.prepare(condition){
                 arr.append(Writing(
-                    id: row[self.id],
+                    id: row[self.table[self.id]],
                     content: row[self.content],
                     date: row[self.date]
                 ))

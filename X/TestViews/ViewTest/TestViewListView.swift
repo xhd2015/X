@@ -18,9 +18,21 @@ struct TestViewListView: View {
             NavigationLink(destination: TextViewTestView()){
                  Text("TextView")
             }
-            
-            
-           
+
+            NavigationLink(destination: SheetViewTestView()){
+                Text("Sheet View")
+            }
+
+
+            NavigationLink(destination: PopoverTestView()){
+                Text("Popover View")
+            }
+
+
+
+
+
+
         }.navigationBarTitle("Test Views")
         
     }
