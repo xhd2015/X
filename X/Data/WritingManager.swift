@@ -17,7 +17,7 @@ class WritingManager {
         print("Error happened while operating database" + e.localizedDescription)
     }
     
-    //let userTable:SQLite.Table = Table("users")
+    let table:SQLite.Table = Table("writings")
     let id = Expression<Int64>("id")
     let content = Expression<String>("content")
     let date = Expression<Date>("date")
@@ -33,7 +33,7 @@ class WritingManager {
     }
     
     func ensureTableExists(db:SQLite.Connection) throws {
-        try db.run(getTable().create(ifNotExists: true){t in
+        try db.run(table.create(ifNotExists: true){t in
             t.column(id,primaryKey:true)
             t.column(content)
             t.column(date)
@@ -47,7 +47,7 @@ class WritingManager {
     func insert(writing:Writing) -> Bool{
         var x = writing
         return runNoError {
-            let rowId = try self.db.run(getTable().insert(
+            let rowId = try self.db.run(table.insert(
                 content <- writing.content,
                 date <- writing.date
             ))
@@ -60,9 +60,7 @@ class WritingManager {
             if writing.id <= 0 {
                 throw SqliteException("sqlite model id not positive, id = \(writing.id)")
             }
-            let userTable = getTable()
-            _ = userTable.filter(id == writing.id)
-            try self.db.run(userTable.update(
+            try self.db.run(self.table.filter(id == writing.id).update(
                 content <- writing.content,
                 date <- writing.date
             ))
@@ -72,13 +70,8 @@ class WritingManager {
     func query(id:Int64) -> Writing?{
         var writing:Writing? = nil
         _ = runNoError {
-            let userTable = getTable()
-            _ = userTable.filter(self.id == id)
-            if let user = try self.db.pluck(userTable){
-                writing = Writing()
-                writing!.id = user[self.id]
-                writing!.content = user[self.content]
-                writing!.date = user[self.date]
+            if let model = try self.db.pluck(self.table.filter(self.id == id)){
+                writing = Writing(id:model[self.id], content: model[self.content], date:model[self.date])
             }
         }
         return writing
@@ -90,14 +83,26 @@ class WritingManager {
     func query(since:Date? = nil,until:Date? = nil) -> [Writing] {
         var arr = [Writing]()
         _ = runNoError {
-            let userTable = getTable()
-            if since != nil {
-               _ = userTable.filter(self.date >= since!)
+            var condition = self.table
+            if since != nil || until != nil {
+                if since != nil && until != nil {
+                     condition = condition.filter(self.date >= since! && self.date < until!)
+                }else if since != nil {
+                    condition = condition.filter(self.date >= since!)
+                }else{
+                    condition = condition.filter(self.date < until!)
+                }
             }
-            if until != nil {
-                _ = userTable.filter(self.date < until!)
-            }
-            for row in try self.db.prepare(userTable){
+            // BUGGY! custom operator no short cut
+//            var condition = self.table.filter( (since == nil || self.date >= since! ) && ( until == nil || self.date < until! ) )
+            // TODO: confirm if chaining worked
+//            if since != nil {
+//                condition = condition.filter(self.date >= since! )
+//            }
+//            if until != nil {
+//                condition = condition.filter(self.date >= until! )
+//            }
+            for row in try self.db.prepare(condition){
                 arr.append(Writing(
                     id: row[self.id],
                     content: row[self.content],

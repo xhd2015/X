@@ -48,24 +48,40 @@ class  DateUtils{
     
     /*
      * week of year, start from 0, the last days of the year is considered week of the year
+     * week of the first day of this year is considered first week of this year
+     *
+     * Standard Gregorian:
+     *  2017-01-01 =  Sunday, Week of Year = 1
+     *
+     * let d be the number of days passed from year start(e.g. 01-01),where d>=0
+     *   then  let f(d) be the week of year of the day d
+     *   if d<=6, then
+     *         f(d) = d > 6 - M(0)   ; 0 or 1
+     *   else if M(d)>0,then
+     *         f(d) = f(d-M(d))      ; to week begin
+     *   else
+     *         f(d) = floor(d/7) + f(d - floor(d/7)*7)
+     *
+     *
+     *
      */
     static func getWeekOfYear(_ date:Date) -> Int {
-        var weekOfYear = GREGORIAN_CALENDAR.component(.weekOfYear, from:date) - 1
-        
-        if weekOfYear == 0 {
-            // last week of month 12 is not considered one week of its belonging year
-            // we need to fix this
-            if getMonth(date) == 11 {
-                let weekDay = getWeekdaySinceMonday(date)
-                if weekDay == 6 {
-                    weekOfYear = GREGORIAN_CALENDAR.component(.weekOfYear, from: GREGORIAN_CALENDAR.date(byAdding: .day, value: -1, to: date)!)
-                }else{
-                    // reget with the last validated week adding by 1
-                    weekOfYear = GREGORIAN_CALENDAR.component(.weekOfYear, from: GREGORIAN_CALENDAR.date(byAdding: .day, value: -weekDay-2, to: date)!)
-                }
+        let yearBegin = toYearBegin(date)
+        let M0 = getWeekdaySinceMonday(yearBegin)
+
+        var d = Int(date.timeIntervalSince(yearBegin)/(24*60*60))
+        let Md = getWeekdaySinceMonday(date)
+
+        var remainder =  0
+        if d > 6 {
+            if Md > 0 {
+                d -= Md
             }
+            remainder = d/7
+            d -= 7*remainder
         }
-        return weekOfYear
+
+        return  remainder + ((d - 6 + M0) > 0 ? 1 : 0)
     }
     /*
      * week count of a year
@@ -162,6 +178,10 @@ class  DateUtils{
         }else{
             return DateUtils.GREGORIAN_CALENDAR.date(byAdding: .day, value: 1, to: DateUtils.GREGORIAN_CALENDAR.date(bySettingHour: 12, minute: 0, second: 0, of: date)!)!
         }
+    }
+
+    static  func currentTimeInSeconds() -> Int {
+        return Int(Date().timeIntervalSince1970)
     }
     
 }

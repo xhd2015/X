@@ -23,7 +23,6 @@
 		04317DB823747F4000B1922B /* TagMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04317DB723747F4000B1922B /* TagMap.swift */; };
 		04328649236E8C7100900DDC /* SqliteRawTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04328648236E8C7100900DDC /* SqliteRawTestView.swift */; };
 		0432864B236E8E1500900DDC /* SqliteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432864A236E8E1500900DDC /* SqliteManager.swift */; };
-		04328655236EA04600900DDC /* SQLite in Frameworks */ = {isa = PBXBuildFile; platformFilter = ios; productRef = 04328654236EA04600900DDC /* SQLite */; };
 		0432B60623739E3C00F38DCB /* RemarkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432B60523739E3C00F38DCB /* RemarkManager.swift */; };
 		0432B60823739E4900F38DCB /* TagMapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432B60723739E4900F38DCB /* TagMapManager.swift */; };
 		0432B60A2373A07A00F38DCB /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432B6092373A07A00F38DCB /* Tag.swift */; };
@@ -33,15 +32,15 @@
 		045E00142372927C0083E39D /* WritingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E00132372927C0083E39D /* WritingDetailView.swift */; };
 		045E0017237292CB0083E39D /* ScrollViewTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E0016237292CB0083E39D /* ScrollViewTestView.swift */; };
 		045E0019237293410083E39D /* TestViewListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E0018237293410083E39D /* TestViewListView.swift */; };
-		049044942360D6DF00146B62 /* ShortLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049044932360D6DF00146B62 /* ShortLog.swift */; };
-		049044962360D78800146B62 /* ShortLogGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049044952360D78800146B62 /* ShortLogGroup.swift */; };
-		049044982360D8B900146B62 /* ShortLogGroupList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049044972360D8B900146B62 /* ShortLogGroupList.swift */; };
+		0477FA672375BDA400120F34 /* ViewReferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477FA662375BDA400120F34 /* ViewReferences.swift */; };
+		0477FA692375BE8900120F34 /* WeekedIterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477FA682375BE8900120F34 /* WeekedIterable.swift */; };
+		0477FA6C2375BEC000120F34 /* WeekedSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477FA6B2375BEC000120F34 /* WeekedSequence.swift */; };
+		0477FA6E2375BF3A00120F34 /* WeekstartAndItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477FA6D2375BF3A00120F34 /* WeekstartAndItem.swift */; };
 		04A8262A236DD9B8009668A6 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A82629236DD9B8009668A6 /* TestView.swift */; };
 		04A8262D236DDDA2009668A6 /* CoreDataTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A8262C236DDDA2009668A6 /* CoreDataTestView.swift */; };
 		04A82630236DE5B1009668A6 /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04A8262E236DE5B1009668A6 /* CoreDataModel.xcdatamodeld */; };
 		04A82632236DE627009668A6 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A82631236DE627009668A6 /* CoreDataManager.swift */; };
 		04FBEC152371D9F60084711A /* MiscListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FBEC142371D9F60084711A /* MiscListView.swift */; };
-		04FF35EF236EB3AE00B36F3D /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 04FF35EE236EB3AE00B36F3D /* SQLite */; };
 		04FF35F2236EC6E200B36F3D /* SqliteTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF35F1236EC6E200B36F3D /* SqliteTestView.swift */; };
 		04FF35F4236EC86800B36F3D /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF35F3236EC86800B36F3D /* TextView.swift */; };
 		04FF35F6236ECD4400B36F3D /* SqliteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF35F5236ECD4400B36F3D /* SqliteModel.swift */; };
@@ -54,6 +53,10 @@
 		04FF3605236EF67200B36F3D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF3604236EF67200B36F3D /* DataManager.swift */; };
 		04FF3607236EF81800B36F3D /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF3606236EF81800B36F3D /* ErrorHandler.swift */; };
 		04FF3609236EFA1100B36F3D /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF3608236EFA1100B36F3D /* DateUtils.swift */; };
+		1A54F6E7334A06EF77DAE2F8 /* LinkMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FCE10583AAD940640786 /* LinkMap.swift */; };
+		1A54F8279734F8D9DF40E39C /* MessageException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FB61D9DC8946875153A6 /* MessageException.swift */; };
+		1A54FBFA0D3EA785BB6652BD /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FDBFDD1956F8EB722F18 /* CacheManager.swift */; };
+		1A54FF15AB24A828C6149813 /* LinkMapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F06CBDAA2663522CEB2C /* LinkMapManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,9 +111,10 @@
 		045E00132372927C0083E39D /* WritingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingDetailView.swift; sourceTree = "<group>"; };
 		045E0016237292CB0083E39D /* ScrollViewTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewTestView.swift; sourceTree = "<group>"; };
 		045E0018237293410083E39D /* TestViewListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewListView.swift; sourceTree = "<group>"; };
-		049044932360D6DF00146B62 /* ShortLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortLog.swift; sourceTree = "<group>"; };
-		049044952360D78800146B62 /* ShortLogGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortLogGroup.swift; sourceTree = "<group>"; };
-		049044972360D8B900146B62 /* ShortLogGroupList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortLogGroupList.swift; sourceTree = "<group>"; };
+		0477FA662375BDA400120F34 /* ViewReferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewReferences.swift; sourceTree = "<group>"; };
+		0477FA682375BE8900120F34 /* WeekedIterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekedIterable.swift; sourceTree = "<group>"; };
+		0477FA6B2375BEC000120F34 /* WeekedSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekedSequence.swift; sourceTree = "<group>"; };
+		0477FA6D2375BF3A00120F34 /* WeekstartAndItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekstartAndItem.swift; sourceTree = "<group>"; };
 		04A82629236DD9B8009668A6 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		04A8262C236DDDA2009668A6 /* CoreDataTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTestView.swift; sourceTree = "<group>"; };
 		04A8262F236DE5B1009668A6 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
@@ -128,6 +132,10 @@
 		04FF3604236EF67200B36F3D /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		04FF3606236EF81800B36F3D /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		04FF3608236EFA1100B36F3D /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		1A54F06CBDAA2663522CEB2C /* LinkMapManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkMapManager.swift; sourceTree = "<group>"; };
+		1A54FB61D9DC8946875153A6 /* MessageException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageException.swift; sourceTree = "<group>"; };
+		1A54FCE10583AAD940640786 /* LinkMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkMap.swift; sourceTree = "<group>"; };
+		1A54FDBFDD1956F8EB722F18 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +143,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04FF35EF236EB3AE00B36F3D /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +150,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04328655236EA04600900DDC /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,14 +234,12 @@
 		040F109B2360205B009FD2A5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0477FA642375BCE600120F34 /* General */,
 				042834AE2371D094002A0BAF /* Utils */,
 				040F109C23602073009FD2A5 /* WriterView.swift */,
-				049044932360D6DF00146B62 /* ShortLog.swift */,
-				049044952360D78800146B62 /* ShortLogGroup.swift */,
-				049044972360D8B900146B62 /* ShortLogGroupList.swift */,
-				04FF35F3236EC86800B36F3D /* TextView.swift */,
 				04FF35FD236EF4BD00B36F3D /* WritingList.swift */,
 				045E00132372927C0083E39D /* WritingDetailView.swift */,
+				0477FA662375BDA400120F34 /* ViewReferences.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -252,12 +256,15 @@
 		042C831423635164005C3881 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0477FA6A2375BE9D00120F34 /* WeekWriting */,
 				04FF35FF236EF4E100B36F3D /* Writing.swift */,
 				042C831523635176005C3881 /* LogModel.swift */,
 				044047392373233600898FFB /* TimePoint.swift */,
 				0432B6092373A07A00F38DCB /* Tag.swift */,
 				0432B60B2373A0F700F38DCB /* Remark.swift */,
 				04317DB723747F4000B1922B /* TagMap.swift */,
+				1A54FB61D9DC8946875153A6 /* MessageException.swift */,
+				1A54FCE10583AAD940640786 /* LinkMap.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -311,6 +318,24 @@
 			path = ViewTest;
 			sourceTree = "<group>";
 		};
+		0477FA642375BCE600120F34 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				04FF35F3236EC86800B36F3D /* TextView.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		0477FA6A2375BE9D00120F34 /* WeekWriting */ = {
+			isa = PBXGroup;
+			children = (
+				0477FA682375BE8900120F34 /* WeekedIterable.swift */,
+				0477FA6B2375BEC000120F34 /* WeekedSequence.swift */,
+				0477FA6D2375BF3A00120F34 /* WeekstartAndItem.swift */,
+			);
+			path = WeekWriting;
+			sourceTree = "<group>";
+		};
 		04A8262B236DDD8A009668A6 /* TestViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,6 +366,8 @@
 				04FF3608236EFA1100B36F3D /* DateUtils.swift */,
 				0432B60523739E3C00F38DCB /* RemarkManager.swift */,
 				0432B60723739E4900F38DCB /* TagMapManager.swift */,
+				1A54F06CBDAA2663522CEB2C /* LinkMapManager.swift */,
+				1A54FDBFDD1956F8EB722F18 /* CacheManager.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -362,7 +389,7 @@
 			);
 			name = X;
 			packageProductDependencies = (
-				04FF35EE236EB3AE00B36F3D /* SQLite */,
+				04FF35EE236EB3AE00B36F3D /* XCSwiftPackageProductDependency */,
 			);
 			productName = X;
 			productReference = 040F106823601F9D009FD2A5 /* X.app */;
@@ -383,7 +410,7 @@
 			);
 			name = XTests;
 			packageProductDependencies = (
-				04328654236EA04600900DDC /* SQLite */,
+				04328654236EA04600900DDC /* XCSwiftPackageProductDependency */,
 			);
 			productName = XTests;
 			productReference = 040F107E23601FA1009FD2A5 /* XTests.xctest */;
@@ -440,7 +467,7 @@
 			);
 			mainGroup = 040F105F23601F9D009FD2A5;
 			packageReferences = (
-				04328643236E897E00900DDC /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+				04328643236E897E00900DDC /* XCRemoteSwiftPackageReference */,
 			);
 			productRefGroup = 040F106923601F9D009FD2A5 /* Products */;
 			projectDirPath = "";
@@ -485,7 +512,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				049044982360D8B900146B62 /* ShortLogGroupList.swift in Sources */,
 				04FF3605236EF67200B36F3D /* DataManager.swift in Sources */,
 				0432B60823739E4900F38DCB /* TagMapManager.swift in Sources */,
 				0440473A2373233600898FFB /* TimePoint.swift in Sources */,
@@ -496,13 +522,15 @@
 				042834B02371D0AA002A0BAF /* DateToolView.swift in Sources */,
 				04328649236E8C7100900DDC /* SqliteRawTestView.swift in Sources */,
 				04A82630236DE5B1009668A6 /* CoreDataModel.xcdatamodeld in Sources */,
+				0477FA692375BE8900120F34 /* WeekedIterable.swift in Sources */,
 				04FF3603236EF55000B36F3D /* WritingManager.swift in Sources */,
 				04317DB32374727000B1922B /* TextViewTestView.swift in Sources */,
 				040F106C23601F9D009FD2A5 /* AppDelegate.swift in Sources */,
-				049044942360D6DF00146B62 /* ShortLog.swift in Sources */,
 				045E00142372927C0083E39D /* WritingDetailView.swift in Sources */,
 				04FF35FE236EF4BD00B36F3D /* WritingList.swift in Sources */,
 				04317DB823747F4000B1922B /* TagMap.swift in Sources */,
+				0477FA672375BDA400120F34 /* ViewReferences.swift in Sources */,
+				0477FA6E2375BF3A00120F34 /* WeekstartAndItem.swift in Sources */,
 				04FF3600236EF4E100B36F3D /* Writing.swift in Sources */,
 				040F106E23601F9D009FD2A5 /* SceneDelegate.swift in Sources */,
 				04317DB62374733000B1922B /* NetworkTestView.swift in Sources */,
@@ -511,7 +539,6 @@
 				04FF35FA236ED83100B36F3D /* SqliteException.swift in Sources */,
 				04A82632236DE627009668A6 /* CoreDataManager.swift in Sources */,
 				042C831623635176005C3881 /* LogModel.swift in Sources */,
-				049044962360D78800146B62 /* ShortLogGroup.swift in Sources */,
 				0432B60A2373A07A00F38DCB /* Tag.swift in Sources */,
 				04A8262A236DD9B8009668A6 /* TestView.swift in Sources */,
 				04FF35F4236EC86800B36F3D /* TextView.swift in Sources */,
@@ -523,8 +550,13 @@
 				04FF35F2236EC6E200B36F3D /* SqliteTestView.swift in Sources */,
 				040F109D23602073009FD2A5 /* WriterView.swift in Sources */,
 				0432864B236E8E1500900DDC /* SqliteManager.swift in Sources */,
+				0477FA6C2375BEC000120F34 /* WeekedSequence.swift in Sources */,
 				04FF35F6236ECD4400B36F3D /* SqliteModel.swift in Sources */,
 				04FF35F8236ED2DA00B36F3D /* SqliteModelManager.swift in Sources */,
+				1A54F8279734F8D9DF40E39C /* MessageException.swift in Sources */,
+				1A54F6E7334A06EF77DAE2F8 /* LinkMap.swift in Sources */,
+				1A54FF15AB24A828C6149813 /* LinkMapManager.swift in Sources */,
+				1A54FBFA0D3EA785BB6652BD /* CacheManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -853,7 +885,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		04328643236E897E00900DDC /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+		04328643236E897E00900DDC /* XCRemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
 			requirement = {
@@ -864,14 +896,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		04328654236EA04600900DDC /* SQLite */ = {
+		04328654236EA04600900DDC /* XCSwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 04328643236E897E00900DDC /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			package = 04328643236E897E00900DDC /* XCRemoteSwiftPackageReference */;
 			productName = SQLite;
 		};
-		04FF35EE236EB3AE00B36F3D /* SQLite */ = {
+		04FF35EE236EB3AE00B36F3D /* XCSwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 04328643236E897E00900DDC /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			package = 04328643236E897E00900DDC /* XCRemoteSwiftPackageReference */;
 			productName = SQLite;
 		};
 /* End XCSwiftPackageProductDependency section */
