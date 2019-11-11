@@ -108,26 +108,6 @@ class WritingManager {
                     .select(self.table[self.id],self.table[self.date],self.table[self.content])
             .order(self.table[self.date],self.table[self.id])
 
-
-//            if since != nil || until != nil {
-//                if since != nil && until != nil {
-//                     condition = condition.filter(self.date >= since! && self.date <= until!)
-//                }else if since != nil {
-//                    condition = condition.filter(self.date >= since!)
-//                }else{
-//                    condition = condition.filter(self.date <= until!)
-//                }
-//            }
-//            condition = condition.filter()
-            // BUGGY! custom operator no short cut
-//            var condition = self.table.filter( (since == nil || self.date >= since! ) && ( until == nil || self.date < until! ) )
-            // TODO: confirm if chaining worked
-//            if since != nil {
-//                condition = condition.filter(self.date >= since! )
-//            }
-//            if until != nil {
-//                condition = condition.filter(self.date >= until! )
-//            }
             for row in try self.db.prepare(condition){
                 arr.append(Writing(
                     id: row[self.table[self.id]],

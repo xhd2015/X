@@ -17,6 +17,7 @@
 		040F108E23601FA1009FD2A5 /* XUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F108D23601FA1009FD2A5 /* XUITests.swift */; };
 		040F109D23602073009FD2A5 /* WriterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F109C23602073009FD2A5 /* WriterView.swift */; };
 		042834B02371D0AA002A0BAF /* DateToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042834AF2371D0AA002A0BAF /* DateToolView.swift */; };
+		0429F2262379770B007243E9 /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429F2252379770B007243E9 /* AlertMessage.swift */; };
 		042C831623635176005C3881 /* LogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C831523635176005C3881 /* LogModel.swift */; };
 		04317DB32374727000B1922B /* TextViewTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04317DB22374727000B1922B /* TextViewTestView.swift */; };
 		04317DB62374733000B1922B /* NetworkTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04317DB52374733000B1922B /* NetworkTestView.swift */; };
@@ -27,6 +28,7 @@
 		0432B60823739E4900F38DCB /* TagMapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432B60723739E4900F38DCB /* TagMapManager.swift */; };
 		0432B60A2373A07A00F38DCB /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432B6092373A07A00F38DCB /* Tag.swift */; };
 		0432B60C2373A0F700F38DCB /* Remark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432B60B2373A0F700F38DCB /* Remark.swift */; };
+		043C83F82379B97E007B3D2E /* TabTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C83F72379B97E007B3D2E /* TabTestView.swift */; };
 		0440473823731C2A00898FFB /* WorkOverTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440473723731C2A00898FFB /* WorkOverTimeView.swift */; };
 		0440473A2373233600898FFB /* TimePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044047392373233600898FFB /* TimePoint.swift */; };
 		045E00142372927C0083E39D /* WritingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E00132372927C0083E39D /* WritingDetailView.swift */; };
@@ -36,6 +38,10 @@
 		0477FA692375BE8900120F34 /* WeekedIterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477FA682375BE8900120F34 /* WeekedIterable.swift */; };
 		0477FA6C2375BEC000120F34 /* WeekedSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477FA6B2375BEC000120F34 /* WeekedSequence.swift */; };
 		0477FA6E2375BF3A00120F34 /* WeekstartAndItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477FA6D2375BF3A00120F34 /* WeekstartAndItem.swift */; };
+		04908724237925A000E8887E /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 04FF35EE236EB3AE00B36F3D /* SQLite */; };
+		04908725237925A000E8887E /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 04328654236EA04600900DDC /* SQLite */; };
+		049087272379298200E8887E /* KeyboardHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049087262379298200E8887E /* KeyboardHeight.swift */; };
+		0490872923792CE200E8887E /* KeyboardAdaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0490872823792CE200E8887E /* KeyboardAdaptive.swift */; };
 		04A8262A236DD9B8009668A6 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A82629236DD9B8009668A6 /* TestView.swift */; };
 		04A8262D236DDDA2009668A6 /* CoreDataTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A8262C236DDDA2009668A6 /* CoreDataTestView.swift */; };
 		04A82630236DE5B1009668A6 /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04A8262E236DE5B1009668A6 /* CoreDataModel.xcdatamodeld */; };
@@ -96,6 +102,7 @@
 		040F108F23601FA1009FD2A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		040F109C23602073009FD2A5 /* WriterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriterView.swift; sourceTree = "<group>"; };
 		042834AF2371D0AA002A0BAF /* DateToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateToolView.swift; sourceTree = "<group>"; };
+		0429F2252379770B007243E9 /* AlertMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
 		042C831523635176005C3881 /* LogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogModel.swift; sourceTree = "<group>"; };
 		04317DB22374727000B1922B /* TextViewTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewTestView.swift; sourceTree = "<group>"; };
 		04317DB52374733000B1922B /* NetworkTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTestView.swift; sourceTree = "<group>"; };
@@ -109,6 +116,7 @@
 		0432B60723739E4900F38DCB /* TagMapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagMapManager.swift; sourceTree = "<group>"; };
 		0432B6092373A07A00F38DCB /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		0432B60B2373A0F700F38DCB /* Remark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remark.swift; sourceTree = "<group>"; };
+		043C83F72379B97E007B3D2E /* TabTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabTestView.swift; sourceTree = "<group>"; };
 		0440473723731C2A00898FFB /* WorkOverTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOverTimeView.swift; sourceTree = "<group>"; };
 		044047392373233600898FFB /* TimePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePoint.swift; sourceTree = "<group>"; };
 		045E00132372927C0083E39D /* WritingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingDetailView.swift; sourceTree = "<group>"; };
@@ -118,6 +126,8 @@
 		0477FA682375BE8900120F34 /* WeekedIterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekedIterable.swift; sourceTree = "<group>"; };
 		0477FA6B2375BEC000120F34 /* WeekedSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekedSequence.swift; sourceTree = "<group>"; };
 		0477FA6D2375BF3A00120F34 /* WeekstartAndItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekstartAndItem.swift; sourceTree = "<group>"; };
+		049087262379298200E8887E /* KeyboardHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHeight.swift; sourceTree = "<group>"; };
+		0490872823792CE200E8887E /* KeyboardAdaptive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAdaptive.swift; sourceTree = "<group>"; };
 		04A82629236DD9B8009668A6 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		04A8262C236DDDA2009668A6 /* CoreDataTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTestView.swift; sourceTree = "<group>"; };
 		04A8262F236DE5B1009668A6 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
@@ -149,6 +159,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04908724237925A000E8887E /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04908725237925A000E8887E /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,8 +217,6 @@
 				040F107623601FA1009FD2A5 /* LaunchScreen.storyboard */,
 				040F107923601FA1009FD2A5 /* Info.plist */,
 				040F107323601FA1009FD2A5 /* Preview Content */,
-				04A82629236DD9B8009668A6 /* TestView.swift */,
-				04FBEC142371D9F60084711A /* MiscListView.swift */,
 			);
 			path = X;
 			sourceTree = "<group>";
@@ -240,6 +250,8 @@
 		040F109B2360205B009FD2A5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				04A82629236DD9B8009668A6 /* TestView.swift */,
+				04FBEC142371D9F60084711A /* MiscListView.swift */,
 				0477FA642375BCE600120F34 /* General */,
 				042834AE2371D094002A0BAF /* Utils */,
 				040F109C23602073009FD2A5 /* WriterView.swift */,
@@ -271,6 +283,9 @@
 				04317DB723747F4000B1922B /* TagMap.swift */,
 				1A54FB61D9DC8946875153A6 /* MessageException.swift */,
 				1A54FCE10583AAD940640786 /* LinkMap.swift */,
+				049087262379298200E8887E /* KeyboardHeight.swift */,
+				0490872823792CE200E8887E /* KeyboardAdaptive.swift */,
+				0429F2252379770B007243E9 /* AlertMessage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -322,6 +337,7 @@
 				04317DB22374727000B1922B /* TextViewTestView.swift */,
 				1A54F8FE4949269754DC25C7 /* SheetViewTestView.swift */,
 				1A54F6494CDBA301B4439031 /* PopoverTestView.swift */,
+				043C83F72379B97E007B3D2E /* TabTestView.swift */,
 			);
 			path = ViewTest;
 			sourceTree = "<group>";
@@ -398,7 +414,7 @@
 			);
 			name = X;
 			packageProductDependencies = (
-				04FF35EE236EB3AE00B36F3D /* XCSwiftPackageProductDependency */,
+				04FF35EE236EB3AE00B36F3D /* SQLite */,
 			);
 			productName = X;
 			productReference = 040F106823601F9D009FD2A5 /* X.app */;
@@ -419,7 +435,7 @@
 			);
 			name = XTests;
 			packageProductDependencies = (
-				04328654236EA04600900DDC /* XCSwiftPackageProductDependency */,
+				04328654236EA04600900DDC /* SQLite */,
 			);
 			productName = XTests;
 			productReference = 040F107E23601FA1009FD2A5 /* XTests.xctest */;
@@ -476,7 +492,7 @@
 			);
 			mainGroup = 040F105F23601F9D009FD2A5;
 			packageReferences = (
-				04328643236E897E00900DDC /* XCRemoteSwiftPackageReference */,
+				04328643236E897E00900DDC /* XCRemoteSwiftPackageReference "SQLite.swift" */,
 			);
 			productRefGroup = 040F106923601F9D009FD2A5 /* Products */;
 			projectDirPath = "";
@@ -521,6 +537,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0490872923792CE200E8887E /* KeyboardAdaptive.swift in Sources */,
 				04FF3605236EF67200B36F3D /* DataManager.swift in Sources */,
 				0432B60823739E4900F38DCB /* TagMapManager.swift in Sources */,
 				0440473A2373233600898FFB /* TimePoint.swift in Sources */,
@@ -539,11 +556,14 @@
 				04FF35FE236EF4BD00B36F3D /* WritingList.swift in Sources */,
 				04317DB823747F4000B1922B /* TagMap.swift in Sources */,
 				0477FA672375BDA400120F34 /* ViewReferences.swift in Sources */,
+				0429F2262379770B007243E9 /* AlertMessage.swift in Sources */,
 				0477FA6E2375BF3A00120F34 /* WeekstartAndItem.swift in Sources */,
 				04FF3600236EF4E100B36F3D /* Writing.swift in Sources */,
+				043C83F82379B97E007B3D2E /* TabTestView.swift in Sources */,
 				040F106E23601F9D009FD2A5 /* SceneDelegate.swift in Sources */,
 				04317DB62374733000B1922B /* NetworkTestView.swift in Sources */,
 				04FF3607236EF81800B36F3D /* ErrorHandler.swift in Sources */,
+				049087272379298200E8887E /* KeyboardHeight.swift in Sources */,
 				045E0017237292CB0083E39D /* ScrollViewTestView.swift in Sources */,
 				04FF35FA236ED83100B36F3D /* SqliteException.swift in Sources */,
 				04A82632236DE627009668A6 /* CoreDataManager.swift in Sources */,
@@ -897,7 +917,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		04328643236E897E00900DDC /* XCRemoteSwiftPackageReference */ = {
+		04328643236E897E00900DDC /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
 			requirement = {
@@ -908,14 +928,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		04328654236EA04600900DDC /* XCSwiftPackageProductDependency */ = {
+		04328654236EA04600900DDC /* SQLite */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 04328643236E897E00900DDC /* XCRemoteSwiftPackageReference */;
+			package = 04328643236E897E00900DDC /* XCRemoteSwiftPackageReference "SQLite.swift" */;
 			productName = SQLite;
 		};
-		04FF35EE236EB3AE00B36F3D /* XCSwiftPackageProductDependency */ = {
+		04FF35EE236EB3AE00B36F3D /* SQLite */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 04328643236E897E00900DDC /* XCRemoteSwiftPackageReference */;
+			package = 04328643236E897E00900DDC /* XCRemoteSwiftPackageReference "SQLite.swift" */;
 			productName = SQLite;
 		};
 /* End XCSwiftPackageProductDependency section */

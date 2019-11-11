@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c6d87e0-8975-480c-a0d2-7e4323ef6f21" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/X.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/X.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/X/Data/DateUtils.swift" beforeDir="false" afterPath="$PROJECT_DIR$/X/Data/DateUtils.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/X/Data/TagMapManager.swift" beforeDir="false" afterPath="$PROJECT_DIR$/X/Data/TagMapManager.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/X.xcodeproj/project.xcworkspace/xcuserdata/mac.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/X.xcodeproj/project.xcworkspace/xcuserdata/mac.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/X.xcodeproj/xcuserdata/mac.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" afterPath="$PROJECT_DIR$/X.xcodeproj/xcuserdata/mac.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/X/Data/WritingManager.swift" beforeDir="false" afterPath="$PROJECT_DIR$/X/Data/WritingManager.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/X/TestViews/ViewTest/TestViewListView.swift" beforeDir="false" afterPath="$PROJECT_DIR$/X/TestViews/ViewTest/TestViewListView.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/X/Views/WritingDetailView.swift" beforeDir="false" afterPath="$PROJECT_DIR$/X/Views/WritingDetailView.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/X/Views/WritingList.swift" beforeDir="false" afterPath="$PROJECT_DIR$/X/Views/WritingList.swift" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +83,7 @@
     </expand>
     <select />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_87B6A205-1137-4DDB-A280-5938D34FD085" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_44003f833aed6eeeab525cb1a5d98faffb3ba939" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -176,7 +171,9 @@
       <workItem from="1572842498685" duration="1086000" />
       <workItem from="1572877739127" duration="50000" />
       <workItem from="1573303611541" duration="31293000" />
-      <workItem from="1573367346078" duration="20532000" />
+      <workItem from="1573367346078" duration="20922000" />
+      <workItem from="1573449147883" duration="109000" />
+      <workItem from="1573449304053" duration="16000" />
     </task>
     <servers />
   </component>

@@ -27,6 +27,10 @@ struct TestViewListView: View {
             NavigationLink(destination: PopoverTestView()){
                 Text("Popover View")
             }
+            
+            NavigationLink(destination: TabTestView()){
+                Text("Tab View")
+            }
 
 
 

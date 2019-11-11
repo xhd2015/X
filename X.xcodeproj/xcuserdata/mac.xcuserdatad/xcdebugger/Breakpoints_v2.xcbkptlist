@@ -206,10 +206,10 @@
             filePath = "X/Views/WritingList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "197"
-            endingLineNumber = "197"
-            landmarkName = "queryData()"
-            landmarkType = "7">
+            startingLineNumber = "209"
+            endingLineNumber = "209"
+            landmarkName = "WritingList"
+            landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -222,10 +222,10 @@
             filePath = "X/Views/WritingList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "192"
-            endingLineNumber = "192"
-            landmarkName = "refreshData()"
-            landmarkType = "7">
+            startingLineNumber = "202"
+            endingLineNumber = "202"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -238,8 +238,10 @@
             filePath = "X/Views/WritingList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "231"
-            endingLineNumber = "231">
+            startingLineNumber = "243"
+            endingLineNumber = "243"
+            landmarkName = "filterBoxView()"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "196BF62E-98D7-4120-A3CD-DA29DF904C70 - 6cb6b90130ad2d72"
@@ -284,10 +286,10 @@
             filePath = "X/Views/WriterView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "confirm()"
-            landmarkType = "7">
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -302,7 +304,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "103"
             endingLineNumber = "103"
-            landmarkName = "query(since:until:)"
+            landmarkName = "query(since:until:tags:searchContent:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -316,10 +318,10 @@
             filePath = "X/Views/WritingList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
-            landmarkName = "WritingList"
-            landmarkType = "14">
+            startingLineNumber = "191"
+            endingLineNumber = "191"
+            landmarkName = "body"
+            landmarkType = "24">
             <Locations>
                <Location
                   uuid = "62571730-A53C-4076-A210-790CCEC568AE - 90b08cfa43131b5a"
@@ -439,10 +441,10 @@
             filePath = "X/Views/WritingList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "227"
-            endingLineNumber = "227"
-            landmarkName = "previews"
-            landmarkType = "24">
+            startingLineNumber = "239"
+            endingLineNumber = "239"
+            landmarkName = "filterBoxView()"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "D2CD752C-4E2D-4A46-8421-A638062BED2E - cfc8a4012793cf32"
@@ -487,10 +489,10 @@
             filePath = "X/Views/WritingList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "180"
-            endingLineNumber = "180"
-            landmarkName = "writingRow(idx:)"
-            landmarkType = "7">
+            startingLineNumber = "190"
+            endingLineNumber = "190"
+            landmarkName = "body"
+            landmarkType = "24">
             <Locations>
                <Location
                   uuid = "457FAE5A-4803-4B2E-B3BC-D2B71A5B7BCF - fed74f8f0f11b6a4"
@@ -660,7 +662,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "58"
             endingLineNumber = "58"
-            landmarkName = "confirmAdd()"
+            landmarkName = "init(writing:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -676,8 +678,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
             endingLineNumber = "17"
-            landmarkName = "WritingDetailView"
-            landmarkType = "14">
+            landmarkName = "writing"
+            landmarkType = "24">
             <Locations>
                <Location
                   uuid = "24C5B7AF-4537-47C9-86DB-23106EA0DB24 - 435a34883d949209"
@@ -782,10 +784,10 @@
             filePath = "X/Views/WritingList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "init(data:since:until:)"
-            landmarkType = "7">
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "filterTagList"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -798,8 +800,8 @@
             filePath = "X/Views/WritingList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "WritingList"
             landmarkType = "14">
          </BreakpointContent>
@@ -814,10 +816,10 @@
             filePath = "X/Views/WritingList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "init(data:since:until:)"
-            landmarkType = "7">
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "filterTagList"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -830,10 +832,10 @@
             filePath = "X/Views/WritingList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "init(data:since:until:)"
-            landmarkType = "7">
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "filterTagList"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -846,8 +848,8 @@
             filePath = "X/Views/WritingList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -862,57 +864,10 @@
             filePath = "X/Views/WritingList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
             landmarkName = "body"
             landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "2226E48F-6180-42C4-83F7-D766D6B9E59A - 2c081dc7561f4005"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "X.WritingList.body.getter : some"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "118"
-                  endingLineNumber = "118"
-                  offsetFromSymbolStart = "550">
-               </Location>
-               <Location
-                  uuid = "2226E48F-6180-42C4-83F7-D766D6B9E59A - 1b1c2c5fd84c5c21"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 () -&gt; () in X.WritingList.body.getter : some"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "118"
-                  endingLineNumber = "118"
-                  offsetFromSymbolStart = "146">
-               </Location>
-               <Location
-                  uuid = "2226E48F-6180-42C4-83F7-D766D6B9E59A - ab97cb98c62d8f20"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #3 () -&gt; () in X.WritingList.body.getter : some"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "89"
-                  endingLineNumber = "89"
-                  offsetFromSymbolStart = "71">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -925,8 +880,8 @@
             filePath = "X/Views/WritingList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -941,10 +896,10 @@
             filePath = "X/Views/WritingList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
-            landmarkName = "body"
-            landmarkType = "24">
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "WritingList"
+            landmarkType = "14">
             <Locations>
                <Location
                   uuid = "40E4BB60-F338-4569-8941-FEA99A09E3C6 - 2c081dc7561f4005"
@@ -989,10 +944,10 @@
             filePath = "X/Views/WritingList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
-            landmarkName = "body"
-            landmarkType = "24">
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "WritingList"
+            landmarkType = "14">
             <Locations>
                <Location
                   uuid = "0E2CFD3F-A112-4C20-A59E-1B150C60153A - e3075881f6d8a811"
@@ -1031,14 +986,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "778DDA5C-D9C7-4562-9EFB-00DDA70B6E3B"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "X/Views/WritingList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -1053,10 +1008,10 @@
             filePath = "X/Views/WritingList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
-            landmarkName = "body"
-            landmarkType = "24">
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "init(data:since:until:mode:selected:tags:filterDateMode:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "D4C4543B-6CA9-4602-A49D-A4497C621A78 - 9a966c3bd6b7cdf"
@@ -1101,10 +1056,10 @@
             filePath = "X/Views/WritingList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
-            landmarkName = "writingRow(idx:)"
-            landmarkType = "7">
+            startingLineNumber = "153"
+            endingLineNumber = "153"
+            landmarkName = "body"
+            landmarkType = "24">
             <Locations>
                <Location
                   uuid = "1E81B61B-F912-4D77-9BA4-4501048D13DB - 154313010e606d82"
@@ -1137,6 +1092,271 @@
                   offsetFromSymbolStart = "745">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "57F95A14-25A9-43DC-A68A-7758118640F0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "X/Views/WritingList.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "WritingList"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "57F95A14-25A9-43DC-A68A-7758118640F0 - 9ebbf41bce210124"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 0 of X.WritingList.init(since: Swift.Optional&lt;Foundation.Date&gt;, until: Swift.Optional&lt;Foundation.Date&gt;, selected: Swift.Optional&lt;SwiftUI.Binding&lt;__C.NSMutableOrderedSet&gt;&gt;, tags: Swift.Optional&lt;Swift.Array&lt;Swift.String&gt;&gt;) -&gt; X.WritingList"
+                  moduleName = "X"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "57F95A14-25A9-43DC-A68A-7758118640F0 - 14f741ec366e5323"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 1 of X.WritingList.init(since: Swift.Optional&lt;Foundation.Date&gt;, until: Swift.Optional&lt;Foundation.Date&gt;, selected: Swift.Optional&lt;SwiftUI.Binding&lt;__C.NSMutableOrderedSet&gt;&gt;, tags: Swift.Optional&lt;Swift.Array&lt;Swift.String&gt;&gt;) -&gt; X.WritingList"
+                  moduleName = "X"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "57F95A14-25A9-43DC-A68A-7758118640F0 - 92231d7cbeaaad22"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 2 of X.WritingList.init(since: Swift.Optional&lt;Foundation.Date&gt;, until: Swift.Optional&lt;Foundation.Date&gt;, selected: Swift.Optional&lt;SwiftUI.Binding&lt;__C.NSMutableOrderedSet&gt;&gt;, tags: Swift.Optional&lt;Swift.Array&lt;Swift.String&gt;&gt;) -&gt; X.WritingList"
+                  moduleName = "X"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "57F95A14-25A9-43DC-A68A-7758118640F0 - 2818eecd26d7ff21"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 3 of X.WritingList.init(since: Swift.Optional&lt;Foundation.Date&gt;, until: Swift.Optional&lt;Foundation.Date&gt;, selected: Swift.Optional&lt;SwiftUI.Binding&lt;__C.NSMutableOrderedSet&gt;&gt;, tags: Swift.Optional&lt;Swift.Array&lt;Swift.String&gt;&gt;) -&gt; X.WritingList"
+                  moduleName = "X"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "57F95A14-25A9-43DC-A68A-7758118640F0 - 7465c1a18d6533ba"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "X.WritingList.init(since: Swift.Optional&lt;Foundation.Date&gt;, until: Swift.Optional&lt;Foundation.Date&gt;, selected: Swift.Optional&lt;SwiftUI.Binding&lt;__C.NSMutableOrderedSet&gt;&gt;, tags: Swift.Optional&lt;Swift.Array&lt;Swift.String&gt;&gt;) -&gt; X.WritingList"
+                  moduleName = "X"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "284">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "79041FF8-1DAD-4FB9-93F9-49DD648F3CDC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "X/Views/WritingList.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "init(since:until:selected:tags:filterDateMode:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "53EBB903-2899-476A-B392-A54B92055961"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "X/Views/WritingList.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "299"
+            endingLineNumber = "299"
+            landmarkName = "WritingList"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "57CB4E2E-E880-4704-B4A0-78F6DE033231"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "X/Data/WritingManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "query(since:until:tags:searchContent:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2FD57C93-147D-440B-9CF3-B202E270217E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "X/Views/WritingList.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "init(since:until:selected:tags:filterDateMode:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2FD57C93-147D-440B-9CF3-B202E270217E - 3c0fb0af5a96dcfa"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 5 of X.WritingList.init(data: Swift.Array&lt;X.Writing&gt;, since: Swift.Optional&lt;Foundation.Date&gt;, until: Swift.Optional&lt;Foundation.Date&gt;, mode: Swift.String, selected: Swift.Optional&lt;SwiftUI.Binding&lt;__C.NSMutableOrderedSet&gt;&gt;, tags: Swift.Optional&lt;Swift.Array&lt;Swift.String&gt;&gt;) -&gt; X.WritingList"
+                  moduleName = "X"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "2FD57C93-147D-440B-9CF3-B202E270217E - fcbf815b93107500"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "X.WritingList.init(data: Swift.Array&lt;X.Writing&gt;, since: Swift.Optional&lt;Foundation.Date&gt;, until: Swift.Optional&lt;Foundation.Date&gt;, mode: Swift.String, selected: Swift.Optional&lt;SwiftUI.Binding&lt;__C.NSMutableOrderedSet&gt;&gt;, tags: Swift.Optional&lt;Swift.Array&lt;Swift.String&gt;&gt;) -&gt; X.WritingList"
+                  moduleName = "X"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "428">
+               </Location>
+               <Location
+                  uuid = "2FD57C93-147D-440B-9CF3-B202E270217E - 67fc7c7931a794fe"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 1 of X.WritingList.init(data: Swift.Array&lt;X.Writing&gt;, since: Swift.Optional&lt;Foundation.Date&gt;, until: Swift.Optional&lt;Foundation.Date&gt;, mode: Swift.String, selected: Swift.Optional&lt;SwiftUI.Binding&lt;__C.NSMutableOrderedSet&gt;&gt;, tags: Swift.Optional&lt;Swift.Array&lt;Swift.String&gt;&gt;) -&gt; X.WritingList"
+                  moduleName = "X"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "2FD57C93-147D-440B-9CF3-B202E270217E - 9009ad0ecbe3e6fd"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 2 of X.WritingList.init(data: Swift.Array&lt;X.Writing&gt;, since: Swift.Optional&lt;Foundation.Date&gt;, until: Swift.Optional&lt;Foundation.Date&gt;, mode: Swift.String, selected: Swift.Optional&lt;SwiftUI.Binding&lt;__C.NSMutableOrderedSet&gt;&gt;, tags: Swift.Optional&lt;Swift.Array&lt;Swift.String&gt;&gt;) -&gt; X.WritingList"
+                  moduleName = "X"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "2FD57C93-147D-440B-9CF3-B202E270217E - c2a6d2c4462f30fc"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 3 of X.WritingList.init(data: Swift.Array&lt;X.Writing&gt;, since: Swift.Optional&lt;Foundation.Date&gt;, until: Swift.Optional&lt;Foundation.Date&gt;, mode: Swift.String, selected: Swift.Optional&lt;SwiftUI.Binding&lt;__C.NSMutableOrderedSet&gt;&gt;, tags: Swift.Optional&lt;Swift.Array&lt;Swift.String&gt;&gt;) -&gt; X.WritingList"
+                  moduleName = "X"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "2FD57C93-147D-440B-9CF3-B202E270217E - f3f20399c06a82fb"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 4 of X.WritingList.init(data: Swift.Array&lt;X.Writing&gt;, since: Swift.Optional&lt;Foundation.Date&gt;, until: Swift.Optional&lt;Foundation.Date&gt;, mode: Swift.String, selected: Swift.Optional&lt;SwiftUI.Binding&lt;__C.NSMutableOrderedSet&gt;&gt;, tags: Swift.Optional&lt;Swift.Array&lt;Swift.String&gt;&gt;) -&gt; X.WritingList"
+                  moduleName = "X"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "00590744-BDC6-4C03-A5C6-DD473BE97C1F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "X/Views/WritingList.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "init(since:until:selected:tags:filterDateMode:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
