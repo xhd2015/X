@@ -92,6 +92,12 @@ class TagMapManager {
         }
     }
     
+    func remove(id:Int64) -> Bool {
+        return runNoError {
+            try self.db.run(self.table.filter(self.id == id).delete())
+        }
+    }
+    
     func query(id:Int64) -> TagMap?{
         var model:TagMap? = nil
         _ = runNoError {

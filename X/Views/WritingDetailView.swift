@@ -21,6 +21,9 @@ struct WritingDetailView: View {
     @State var showAlert: Bool = false
     @State var alertContent: String = ""
     @State var alertTitle: String = ""
+    
+    @State var alertDeleteTag:Bool = false
+    @State var deleteTag:TagMap? = nil
 
     @State var tagMaps: [TagMap]? = nil
 
@@ -155,13 +158,26 @@ struct WritingDetailView: View {
                         .font(.subheadline)
                         .bold()
                         .underline()
+                    .alert(isPresented:self.$alertDeleteTag){
+                        Alert(title: Text("Confirm"), message: Text("Are you sure to remove this tag:\(self.deleteTag!.tagName)"), primaryButton: .default(Text("OK"), action: {
+                            _ = DataManager.tagMapManager.remove(id:self.deleteTag!.id)
+                            self.refreshTagMaps()
+                            self.alertDeleteTag = false
+                        }), secondaryButton: .cancel(Text("Cancel"), action: {
+                            self.alertDeleteTag = false
+                        }))
+                }
 
                 if !requiredTagMaps.isEmpty {
 //                    HStack {
                         ForEach(requiredTagMaps, id: \.id) { model in
-                            NavigationLink(destination: WritingList(tags:[model.tagName])){
+                            NavigationLink(destination: WritingList(tags:[model.tagName],filterDateMode:.EVER_SINCE)){
                                 Text(model.tagName)
                                         .foregroundColor(.orange)
+                                    .onLongPressGesture {
+                                        self.deleteTag = model
+                                        self.alertDeleteTag = true
+                                }
                             }
                         }
 //                    }

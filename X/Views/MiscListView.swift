@@ -11,6 +11,10 @@ import SwiftUI
 struct MiscListView: View {
     var body: some View {
         List{
+            
+            NavigationLink(destination:WritingList(tags:["constant"],filterDateMode:.EVER_SINCE)){
+                Text("Constant")
+            }
             NavigationLink(destination: TestView()){
                 Text("Test")
             }

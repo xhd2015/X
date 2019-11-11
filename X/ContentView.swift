@@ -19,7 +19,7 @@ struct ContentView: View {
 //                    Text("Write")
 //                }
 //
-                WritingList(since:DateUtils.toWeekMondayBegin())
+                WritingList(filterDateMode: .THIS_WEEK)
                     //            .navigationBarHidden(true)
                     .navigationBarTitle("Happening", displayMode: .inline)
                     

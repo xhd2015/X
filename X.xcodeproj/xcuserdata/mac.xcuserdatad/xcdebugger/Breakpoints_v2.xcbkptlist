@@ -206,10 +206,10 @@
             filePath = "X/Views/WritingList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "197"
-            endingLineNumber = "197"
-            landmarkName = "queryData()"
-            landmarkType = "7">
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "WritingList"
+            landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -222,10 +222,10 @@
             filePath = "X/Views/WritingList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "192"
-            endingLineNumber = "192"
-            landmarkName = "refreshData()"
-            landmarkType = "7">
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "WritingList"
+            landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -238,8 +238,10 @@
             filePath = "X/Views/WritingList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "231"
-            endingLineNumber = "231">
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "body"
+            landmarkType = "24">
             <Locations>
                <Location
                   uuid = "196BF62E-98D7-4120-A3CD-DA29DF904C70 - 6cb6b90130ad2d72"
@@ -277,6 +279,22 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "AB5B073E-6099-4B06-A982-B2D8C1312ABC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "X/Views/WritingList.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "next()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
             uuid = "58792BFE-134C-4FBF-AA90-5BD7399F83EE"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -300,843 +318,42 @@
             filePath = "X/Data/WritingManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
-            landmarkName = "query(since:until:)"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "querySince(since:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "62571730-A53C-4076-A210-790CCEC568AE"
+            uuid = "A6937F9B-0B13-4133-9DAD-A7F7523A2D08"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "X/Views/WritingList.swift"
+            filePath = "X/Data/DateUtils.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
-            landmarkName = "WritingList"
-            landmarkType = "14">
-            <Locations>
-               <Location
-                  uuid = "62571730-A53C-4076-A210-790CCEC568AE - 90b08cfa43131b5a"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "X.WritingList.until.getter : Swift.Optional&lt;Foundation.Date&gt;"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "115"
-                  endingLineNumber = "115"
-                  offsetFromSymbolStart = "203">
-               </Location>
-               <Location
-                  uuid = "62571730-A53C-4076-A210-790CCEC568AE - f6f9c6f49c5def4e"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "X.WritingList.until.setter : Swift.Optional&lt;Foundation.Date&gt;"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "115"
-                  endingLineNumber = "115"
-                  offsetFromSymbolStart = "267">
-               </Location>
-               <Location
-                  uuid = "62571730-A53C-4076-A210-790CCEC568AE - 4f87f67d9a6fa05d"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "X.WritingList.until.modify : Swift.Optional&lt;Foundation.Date&gt;"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "115"
-                  endingLineNumber = "115"
-                  offsetFromSymbolStart = "248">
-               </Location>
-               <Location
-                  uuid = "62571730-A53C-4076-A210-790CCEC568AE - 2c1525ed0d5b004e"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "X.WritingList.until.modify : Swift.Optional&lt;Foundation.Date&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "115"
-                  endingLineNumber = "115"
-                  offsetFromSymbolStart = "23">
-               </Location>
-               <Location
-                  uuid = "62571730-A53C-4076-A210-790CCEC568AE - 41d8c588bfefd506"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "X.WritingList.$until.getter : SwiftUI.Binding&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "115"
-                  endingLineNumber = "115"
-                  offsetFromSymbolStart = "203">
-               </Location>
-               <Location
-                  uuid = "62571730-A53C-4076-A210-790CCEC568AE - 198a7a97854a43cf"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "X.WritingList.init(since: Swift.Optional&lt;Foundation.Date&gt;, until: Swift.Optional&lt;Foundation.Date&gt;, data: Swift.Optional&lt;Swift.Array&lt;X.Writing&gt;&gt;) -&gt; X.WritingList"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "115"
-                  endingLineNumber = "115"
-                  offsetFromSymbolStart = "93">
-               </Location>
-               <Location
-                  uuid = "62571730-A53C-4076-A210-790CCEC568AE - 1e6c245e375a9838"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "X.WritingList.init() -&gt; X.WritingList"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "115"
-                  endingLineNumber = "115"
-                  offsetFromSymbolStart = "322">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D2CD752C-4E2D-4A46-8421-A638062BED2E"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "X/Views/WritingList.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "227"
-            endingLineNumber = "227"
-            landmarkName = "previews"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "D2CD752C-4E2D-4A46-8421-A638062BED2E - cfc8a4012793cf32"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;X.WritingList.WeekstartAndItem&gt;, Foundation.Date, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Spacer, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0)&gt;&gt;, SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;X.WritingList.WeekstartAndItem&gt;, Foundation.Date, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;&gt;)&gt; in X.WritingList.body.getter : some"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "158"
-                  endingLineNumber = "158"
-                  offsetFromSymbolStart = "86">
-               </Location>
-               <Location
-                  uuid = "D2CD752C-4E2D-4A46-8421-A638062BED2E - f617c50e8c165b14"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (X.WritingList.WeekstartAndItem) -&gt; &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0 in closure #2 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;X.WritingList.WeekstartAndItem&gt;, Foundation.Date, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Spacer, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0)&gt;&gt;, SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;X.WritingList.WeekstartAndItem&gt;, Foundation.Date, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;&gt;)&gt; in X.WritingList.body.getter : some"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "160"
-                  endingLineNumber = "160"
-                  offsetFromSymbolStart = "91">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "457FAE5A-4803-4B2E-B3BC-D2B71A5B7BCF"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "X/Views/WritingList.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "180"
-            endingLineNumber = "180"
-            landmarkName = "writingRow(idx:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "457FAE5A-4803-4B2E-B3BC-D2B71A5B7BCF - fed74f8f0f11b6a4"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "X.WritingList.since.getter : Swift.Optional&lt;Foundation.Date&gt;"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "114"
-                  endingLineNumber = "114"
-                  offsetFromSymbolStart = "165">
-               </Location>
-               <Location
-                  uuid = "457FAE5A-4803-4B2E-B3BC-D2B71A5B7BCF - 5c18818a48539aa8"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "X.WritingList.since.setter : Swift.Optional&lt;Foundation.Date&gt;"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "114"
-                  endingLineNumber = "114"
-                  offsetFromSymbolStart = "230">
-               </Location>
-               <Location
-                  uuid = "457FAE5A-4803-4B2E-B3BC-D2B71A5B7BCF - 9526b133466e53a7"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "X.WritingList.since.modify : Swift.Optional&lt;Foundation.Date&gt;"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "114"
-                  endingLineNumber = "114"
-                  offsetFromSymbolStart = "248">
-               </Location>
-               <Location
-                  uuid = "457FAE5A-4803-4B2E-B3BC-D2B71A5B7BCF - bd9f6a233c454fa8"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "X.WritingList.since.modify : Swift.Optional&lt;Foundation.Date&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "114"
-                  endingLineNumber = "114"
-                  offsetFromSymbolStart = "23">
-               </Location>
-               <Location
-                  uuid = "457FAE5A-4803-4B2E-B3BC-D2B71A5B7BCF - 75f5cb9b28415a60"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "X.WritingList.$since.getter : SwiftUI.Binding&lt;Swift.Optional&lt;Foundation.Date&gt;&gt;"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "114"
-                  endingLineNumber = "114"
-                  offsetFromSymbolStart = "165">
-               </Location>
-               <Location
-                  uuid = "457FAE5A-4803-4B2E-B3BC-D2B71A5B7BCF - 198a7a97854a43cf"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "X.WritingList.init(since: Swift.Optional&lt;Foundation.Date&gt;, until: Swift.Optional&lt;Foundation.Date&gt;, data: Swift.Optional&lt;Swift.Array&lt;X.Writing&gt;&gt;) -&gt; X.WritingList"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "114"
-                  endingLineNumber = "114"
-                  offsetFromSymbolStart = "17">
-               </Location>
-               <Location
-                  uuid = "457FAE5A-4803-4B2E-B3BC-D2B71A5B7BCF - 1e6c245e375a9838"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "X.WritingList.init() -&gt; X.WritingList"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "114"
-                  endingLineNumber = "114"
-                  offsetFromSymbolStart = "179">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B981C10A-BDA4-441C-B570-7AF0535CFC88"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "X/Views/Utils/WorkOverTimeView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "calculate()"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "toStartOfDay(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EAF5E864-92BD-4E2F-AAFC-9E2D4BE7F49D"
+            uuid = "C4F583F0-18E1-4CDE-9756-8F8DF371BB80"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "X/Data/RemarkManager.swift"
+            filePath = "X/Data/DateUtils.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
-            landmarkName = "query(writingId:)"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "toStartOfDay(_:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6E467F0D-6BE9-451A-9E9F-5D82CEAA106B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "X/Data/RemarkManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
-            landmarkName = "query(writingId:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6A3327CB-7FE7-4D01-97DC-A89F4336018F"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "X/Views/WritingDetailView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "confirmAdd()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "24C5B7AF-4537-47C9-86DB-23106EA0DB24"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "X/Views/WritingDetailView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "WritingDetailView"
-            landmarkType = "14">
-            <Locations>
-               <Location
-                  uuid = "24C5B7AF-4537-47C9-86DB-23106EA0DB24 - 435a34883d949209"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "X.WritingDetailView.showAlert.getter : Swift.Bool"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingDetailView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "136">
-               </Location>
-               <Location
-                  uuid = "24C5B7AF-4537-47C9-86DB-23106EA0DB24 - 7826dac83551fa15"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "X.WritingDetailView.showAlert.setter : Swift.Bool"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingDetailView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "162">
-               </Location>
-               <Location
-                  uuid = "24C5B7AF-4537-47C9-86DB-23106EA0DB24 - 64f26f00d64af804"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "X.WritingDetailView.showAlert.modify : Swift.Bool"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingDetailView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "147">
-               </Location>
-               <Location
-                  uuid = "24C5B7AF-4537-47C9-86DB-23106EA0DB24 - 893e396df3d9bc15"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "X.WritingDetailView.showAlert.modify : Swift.Bool with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingDetailView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "20">
-               </Location>
-               <Location
-                  uuid = "24C5B7AF-4537-47C9-86DB-23106EA0DB24 - 18adb5845b935c7d"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "X.WritingDetailView.$showAlert.getter : SwiftUI.Binding&lt;Swift.Bool&gt;"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingDetailView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "147">
-               </Location>
-               <Location
-                  uuid = "24C5B7AF-4537-47C9-86DB-23106EA0DB24 - 32ec2f9e1c791a"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "X.WritingDetailView.init(writing: X.Writing, showAddingRemark: Swift.Bool, remarkEditContent: Swift.String, remarks: Swift.Optional&lt;Swift.Array&lt;X.Remark&gt;&gt;, showAlert: Swift.Bool, alertContent: Swift.String) -&gt; X.WritingDetailView"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingDetailView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "384">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "580F5622-3FE0-4CD3-A18B-7EFBCC56464A"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "X/Views/WritingList.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "init(data:since:until:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "38D3BA89-ADEF-40BF-AA24-8A6C28B2D9E9"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "X/Views/WritingList.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "WritingList"
-            landmarkType = "14">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "79968D75-27BE-409C-8CD6-6D1D8449745D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "X/Views/WritingList.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "init(data:since:until:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "75EC7E00-6357-4B28-919F-9BA4EBD61BC0"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "X/Views/WritingList.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "init(data:since:until:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DBBA21B7-A123-4306-BC8B-551C9456A1A8"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "X/Views/WritingList.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
-            landmarkName = "body"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2226E48F-6180-42C4-83F7-D766D6B9E59A"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "X/Views/WritingList.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "2226E48F-6180-42C4-83F7-D766D6B9E59A - 2c081dc7561f4005"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "X.WritingList.body.getter : some"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "118"
-                  endingLineNumber = "118"
-                  offsetFromSymbolStart = "550">
-               </Location>
-               <Location
-                  uuid = "2226E48F-6180-42C4-83F7-D766D6B9E59A - 1b1c2c5fd84c5c21"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 () -&gt; () in X.WritingList.body.getter : some"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "118"
-                  endingLineNumber = "118"
-                  offsetFromSymbolStart = "146">
-               </Location>
-               <Location
-                  uuid = "2226E48F-6180-42C4-83F7-D766D6B9E59A - ab97cb98c62d8f20"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #3 () -&gt; () in X.WritingList.body.getter : some"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "89"
-                  endingLineNumber = "89"
-                  offsetFromSymbolStart = "71">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "356D9B82-35A5-4A29-9206-21C084B54AB5"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "X/Views/WritingList.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
-            landmarkName = "body"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "40E4BB60-F338-4569-8941-FEA99A09E3C6"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "X/Views/WritingList.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "40E4BB60-F338-4569-8941-FEA99A09E3C6 - 2c081dc7561f4005"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "X.WritingList.body.getter : some"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "90"
-                  endingLineNumber = "90"
-                  offsetFromSymbolStart = "132">
-               </Location>
-               <Location
-                  uuid = "40E4BB60-F338-4569-8941-FEA99A09E3C6 - 9a966c3bd6b7cdf"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.List&lt;Swift.Never, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0&gt;)&gt; in X.WritingList.body.getter : some"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "89"
-                  endingLineNumber = "89"
-                  offsetFromSymbolStart = "210">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0E2CFD3F-A112-4C20-A59E-1B150C60153A"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "X/Views/WritingList.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "0E2CFD3F-A112-4C20-A59E-1B150C60153A - e3075881f6d8a811"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Int) -&gt; SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of X.WritingList.writingRow(idx: Swift.Int) -&gt; some&gt;&gt;.0&gt; in closure #2 () -&gt; &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.List&lt;Swift.Never, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0&gt;)&gt; in X.WritingList.body.getter : some"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "123"
-                  endingLineNumber = "123"
-                  offsetFromSymbolStart = "517">
-               </Location>
-               <Location
-                  uuid = "0E2CFD3F-A112-4C20-A59E-1B150C60153A - ea061f4b094dd770"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Int) -&gt; SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of X.WritingList.writingRow(idx: Swift.Int) -&gt; some&gt;&gt;.0&gt; in closure #2 () -&gt; &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.List&lt;Swift.Never, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0&gt;)&gt; in X.WritingList.body.getter : some"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "89"
-                  endingLineNumber = "89"
-                  offsetFromSymbolStart = "106">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "778DDA5C-D9C7-4562-9EFB-00DDA70B6E3B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "X/Views/WritingList.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
-            landmarkName = "body"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D4C4543B-6CA9-4602-A49D-A4497C621A78"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "X/Views/WritingList.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "D4C4543B-6CA9-4602-A49D-A4497C621A78 - 9a966c3bd6b7cdf"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.List&lt;Swift.Never, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0&gt;)&gt; in X.WritingList.body.getter : some"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "91"
-                  endingLineNumber = "91"
-                  offsetFromSymbolStart = "246">
-               </Location>
-               <Location
-                  uuid = "D4C4543B-6CA9-4602-A49D-A4497C621A78 - fb57d5a5018dfe71"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Spacer, SwiftUI.Button&lt;SwiftUI.Text&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, X.WriterView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, X.MiscListView&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.List&lt;Swift.Never, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0&gt;)&gt; in X.WritingList.body.getter : some"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "89"
-                  endingLineNumber = "89"
-                  offsetFromSymbolStart = "245">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1E81B61B-F912-4D77-9BA4-4501048D13DB"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "X/Views/WritingList.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
-            landmarkName = "writingRow(idx:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "1E81B61B-F912-4D77-9BA4-4501048D13DB - 154313010e606d82"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "X.WritingList.writingRow(idx: Swift.Int) -&gt; some"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "143"
-                  endingLineNumber = "143"
-                  offsetFromSymbolStart = "111">
-               </Location>
-               <Location
-                  uuid = "1E81B61B-F912-4D77-9BA4-4501048D13DB - 53bb1afe7e09ec46"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Swift.Optional&lt;SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.background&lt;A where A1: SwiftUI.View&gt;(_: A1, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0, SwiftUI.Text&gt;&gt;, SwiftUI.Spacer)&gt;&gt;, SwiftUI._ConditionalContent&lt;SwiftUI.NavigationLink&lt;SwiftUI.Text, X.WritingDetailView&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.background&lt;A where A1: SwiftUI.View&gt;(_: A1, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;, SwiftUI.Text)&gt; in X.WritingList.writingRow(idx: Swift.Int) -&gt; some"
-                  moduleName = "X"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xhd2015/projects/X/X/Views/WritingList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "144"
-                  endingLineNumber = "144"
-                  offsetFromSymbolStart = "745">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
