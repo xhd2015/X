@@ -82,13 +82,22 @@ struct WritingList: View {
     
     init(since: Date? = nil, until: Date? = nil, selected: Binding<NSMutableOrderedSet>? = nil,tags:[String]? = nil,filterDateMode:FilterDateMode = .DATE_BETWEEN) {
         let mode = selected == nil ? "view" : "edit"
-        var s:Date? = since
-        var u:Date? = until
+        var s:Date? = nil
+        var u:Date? = nil
         if filterDateMode != .DATE_BETWEEN {
-            (u,s) = WritingList.getBeginEnd(mode: filterDateMode)
+            (s,u) = WritingList.getBeginEnd(mode: filterDateMode)
+            if since != nil {
+                s = since
+            }
+            if until != nil {
+                u = until
+            }
+        }else{
+            s = since
+            u = until
         }
-        let queryData = DataManager.writingManager.query(since: u, until: s,tags: tags)
-        self.init(data: queryData, since: since, until: until, mode: mode, selected: selected,tags:tags,filterDateMode:filterDateMode)
+        let queryData = DataManager.writingManager.query(since: s, until: u,tags: tags)
+        self.init(data: queryData, since: s, until: u, mode: mode, selected: selected,tags:tags,filterDateMode:filterDateMode)
     }
     
     init(data: [Writing], since: Date? = nil, until: Date? = nil, mode: String = "view", selected: Binding<NSMutableOrderedSet>? = nil,tags:[String]? = nil,filterDateMode:FilterDateMode = .DATE_BETWEEN) {

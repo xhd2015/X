@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040A11F2241E603F0080F510 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 04FF35EE236EB3AE00B36F3D /* SQLite */; };
+		040A11F3241E603F0080F510 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 04328654236EA04600900DDC /* SQLite */; };
 		040F106C23601F9D009FD2A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F106B23601F9D009FD2A5 /* AppDelegate.swift */; };
 		040F106E23601F9D009FD2A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F106D23601F9D009FD2A5 /* SceneDelegate.swift */; };
 		040F107023601F9D009FD2A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F106F23601F9D009FD2A5 /* ContentView.swift */; };
@@ -38,8 +40,6 @@
 		0477FA692375BE8900120F34 /* WeekedIterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477FA682375BE8900120F34 /* WeekedIterable.swift */; };
 		0477FA6C2375BEC000120F34 /* WeekedSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477FA6B2375BEC000120F34 /* WeekedSequence.swift */; };
 		0477FA6E2375BF3A00120F34 /* WeekstartAndItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477FA6D2375BF3A00120F34 /* WeekstartAndItem.swift */; };
-		04908724237925A000E8887E /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 04FF35EE236EB3AE00B36F3D /* SQLite */; };
-		04908725237925A000E8887E /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 04328654236EA04600900DDC /* SQLite */; };
 		049087272379298200E8887E /* KeyboardHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049087262379298200E8887E /* KeyboardHeight.swift */; };
 		0490872923792CE200E8887E /* KeyboardAdaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0490872823792CE200E8887E /* KeyboardAdaptive.swift */; };
 		04A8262A236DD9B8009668A6 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A82629236DD9B8009668A6 /* TestView.swift */; };
@@ -159,7 +159,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04908724237925A000E8887E /* SQLite in Frameworks */,
+				040A11F2241E603F0080F510 /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,7 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04908725237925A000E8887E /* SQLite in Frameworks */,
+				040A11F3241E603F0080F510 /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +465,7 @@
 		040F106023601F9D009FD2A5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = snu2017;

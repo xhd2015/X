@@ -20,10 +20,10 @@
                value = "grp[0].list">
             </PersistentString>
             <PersistentString
-               value = "GroupedItem(weekStart: DateUtils.toWeekMondayBegin(date),list:[Writing]())">
+               value = "item!.list">
             </PersistentString>
             <PersistentString
-               value = "item!.list">
+               value = "GroupedItem(weekStart: DateUtils.toWeekMondayBegin(date),list:[Writing]())">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -73,10 +73,29 @@
          contextName = "WritingList.init(since:until:selected:tags:):WritingList.swift">
       </ContextState>
       <ContextState
+         contextName = "static WritingList.getBeginEnd(mode:):WritingList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "DateUtils.toDateTimeString(start!)">
+            </PersistentString>
+            <PersistentString
+               value = "start!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "WritingList.filterTagList.getter:WritingList.swift">
          <PersistentStrings>
             <PersistentString
                value = "self.filterTags">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "WritingList.refreshData():WritingList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "DateUtils.toDateTimeString(self.until!)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
